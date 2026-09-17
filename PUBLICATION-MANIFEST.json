@@ -1,0 +1,330 @@
+{
+  ".nojekyll": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  ".gitignore": {
+    "bytes": 20,
+    "sha256": "2bdfdb216230559f36faf46907142b8afd478401150f810e1ddaf9a4fdcc656c"
+  },
+  "README.md": {
+    "bytes": 2422,
+    "sha256": "29be7253ea622e1a2852517a066bb5c291b2a38a5d178f0f8ebf619bfefba592"
+  },
+  "index.html": {
+    "bytes": 256,
+    "sha256": "78f87f8da46f4d73a4e70fc4be97ae05f0f52369003d5aae935d9578e6645922"
+  },
+  "reports/feasibility.html": {
+    "bytes": 9964,
+    "sha256": "326853ac2ae5119018a95737b146c78656f9c0d4f2adbb6777f847e0c9ca2a37"
+  },
+  "reports/reference-research.md": {
+    "bytes": 7938,
+    "sha256": "96625f13a3bfc5754cfa5eb9566f194a02a9e0b72f5b96f73d035942e5634209"
+  },
+  "reports/feasibility.md": {
+    "bytes": 8870,
+    "sha256": "9de2ad1f4bfbea4994aefee99c8604da1960ebbc1f55378bef6f2ecdb282fcdb"
+  },
+  "reports/reference-research.html": {
+    "bytes": 9201,
+    "sha256": "e3b369d40ccca5182853ea2fbd97bf20f3de73e3e4adf1a84f1aed06b2173a6f"
+  },
+  "preview/leaflet.css": {
+    "bytes": 14806,
+    "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6"
+  },
+  "preview/data.json": {
+    "bytes": 16538,
+    "sha256": "bce2289cfadc815d938cd40244141ac1926fe5d6804fa760ed24567c8d2e27a0"
+  },
+  "preview/index.html": {
+    "bytes": 2153,
+    "sha256": "4c209ac6dba1387f520b0c7b98b7556d6cad37a6a3e7c962e453c02d9e2302ed"
+  },
+  "preview/review.html": {
+    "bytes": 14433,
+    "sha256": "d8b70551666bb29ccb74ade9371195073b0dab192e9cd18474d9cead5e2d22e6"
+  },
+  "preview/app.js": {
+    "bytes": 2418,
+    "sha256": "1cdbff7d82ebbbbab7ffd58794666f515b8fceffe03f97bc0219b9a67c6399a2"
+  },
+  "preview/leaflet.js": {
+    "bytes": 147552,
+    "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+  },
+  "preview/LEAFLET-LICENSE": {
+    "bytes": 1395,
+    "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+  },
+  "outputs/transformation.json": {
+    "bytes": 1698,
+    "sha256": "a3b0127c7b08115179d81d55bcfd84a7bfd329191e432a51f81aef0325a6a851"
+  },
+  "outputs/hertford-overlay.png": {
+    "bytes": 1564307,
+    "sha256": "67cacc6db20157e690c67dc5b6f2c49f6340528bacfc9172574610501348ae29"
+  },
+  "outputs/errors.csv": {
+    "bytes": 1906,
+    "sha256": "ecb4f531320e18d15ba1fa3a2bef5c5fe13179e7728153dcbf78133904e510ce"
+  },
+  "outputs/bath-comparison.png": {
+    "bytes": 4691469,
+    "sha256": "ea4f9a5c0ced378cb625abeffe4ed8a1cf9a69c26073ad1706e5a3406e9e7522"
+  },
+  "outputs/hertford-comparison.png": {
+    "bytes": 4453419,
+    "sha256": "68e800aa724d6154c8dc734bb544fcafc403b47d201de07b5084e0a48d65b8b2"
+  },
+  "outputs/bath-overlay.png": {
+    "bytes": 1483608,
+    "sha256": "ed8ee2479325f7fec8312d2a49268af6375f64b1a55148b11a8899033427ac5a"
+  },
+  "outputs/cape-fear-comparison.png": {
+    "bytes": 3938953,
+    "sha256": "2719faa20bd96f3d01798fc46ac2238e5bb0e47d62b4c467dca26a5757b9ca79"
+  },
+  "outputs/cog-validation.json": {
+    "bytes": 567,
+    "sha256": "cdb6462e0130ab65d47362d1265b97dc23b4e29b5069168418315aed5f8c6191"
+  },
+  "outputs/overview-comparison.png": {
+    "bytes": 3277738,
+    "sha256": "9f7606b889a4781a271aff57f09cdb68a97b9e2a467fba53a2ee22f5f919f3c7"
+  },
+  "outputs/salem-comparison.png": {
+    "bytes": 5090562,
+    "sha256": "0aef55faf2747865053712e142968ce85e1a0b0c20bf1db4b3ac14b3f2e3b984"
+  },
+  "outputs/cape-fear-overlay.png": {
+    "bytes": 1904489,
+    "sha256": "2681a6125af1c5f3d587b35d011e021a2bb3c33f60d21e827158de13ea530d3c"
+  },
+  "outputs/overview-overlay.png": {
+    "bytes": 3641089,
+    "sha256": "f8361e67a33fcb43ffc9f19b1836311506639186746d1876fb21a4bd1cb6f0fa"
+  },
+  "outputs/salem-overlay.png": {
+    "bytes": 1619828,
+    "sha256": "e1d2974ea5341ddc86f36450215f1e0290512432f915d1a8d527804c59078b56"
+  },
+  "outputs/review/P12-modern.jpg": {
+    "bytes": 61995,
+    "sha256": "978e00e0872d83c30d6e5a935d4003035d2770be66a84c42386c3a465d9dd5e6"
+  },
+  "outputs/review/P08-historical.jpg": {
+    "bytes": 96262,
+    "sha256": "2bbe9f24d66b8cb33c0200401e04bcbfa8df0f1923007e70424b7d3542114cd3"
+  },
+  "outputs/review/P15-historical.jpg": {
+    "bytes": 86449,
+    "sha256": "ca596bc3a13e2763b907adf6cd449f62627c7716b7ea393f12b6e386427e2a95"
+  },
+  "outputs/review/P05-modern.jpg": {
+    "bytes": 61758,
+    "sha256": "dee1d31150b62a2b2de9f9837037185613c4bba4d303d295dfebf43363a2fbb4"
+  },
+  "outputs/review/P08-modern.jpg": {
+    "bytes": 92113,
+    "sha256": "d307128e36ab82a08d8621a0eb1dea2c9eb6722264323b43af001fc7afebc394"
+  },
+  "outputs/review/P03-modern.jpg": {
+    "bytes": 85960,
+    "sha256": "00f80bf745193e9932bbc2f03eb1bdc0e66dbbc932a3ea9dbc27fc2ab2a9dce1"
+  },
+  "outputs/review/P03-historical.jpg": {
+    "bytes": 103234,
+    "sha256": "d5773f5acd72a5ff18e1e2609b982573b9cf10401d90c1b34f35069720a51a07"
+  },
+  "outputs/review/P05-historical.jpg": {
+    "bytes": 89204,
+    "sha256": "39ffc44c4887509a6e08b7a5f3705cb759b5e9a132883becaeb61aa4548363af"
+  },
+  "outputs/review/P11-historical.jpg": {
+    "bytes": 97515,
+    "sha256": "414d6abb259287b2a5351491124731af921a98ed8d64c43e6c811192f39f3e5e"
+  },
+  "outputs/review/P02-historical.jpg": {
+    "bytes": 105475,
+    "sha256": "c29537b5cd479a161b1aea238829634fa1c15a63665ad0ddf337601d60ce0288"
+  },
+  "outputs/review/P06-modern.jpg": {
+    "bytes": 80765,
+    "sha256": "51027b1456e5d3d5b069e4faabcd6d46f97c6b962f1a45c6d20f48d2ec8d33f0"
+  },
+  "outputs/review/P04-historical.jpg": {
+    "bytes": 101206,
+    "sha256": "81b771cb7e1e6e13926427bdc653790f787186e0577e986a2243815dd70714d9"
+  },
+  "outputs/review/P01-modern.jpg": {
+    "bytes": 88294,
+    "sha256": "35467d05b1b440d5f0d4c3922f8559e3e01e4d39b152a0ee04ac11fdd3f929f6"
+  },
+  "outputs/review/P14-historical.jpg": {
+    "bytes": 88129,
+    "sha256": "7eaebefc9db721e62994bc117de22ea27dbf84211727bb6c4965f865cf36d344"
+  },
+  "outputs/review/P04-modern.jpg": {
+    "bytes": 68626,
+    "sha256": "6ff9cb4ff0501e06414afe8bf5f54980f5cd4d0a93f423c67c6fa2faa97e7d96"
+  },
+  "outputs/review/P12-historical.jpg": {
+    "bytes": 81577,
+    "sha256": "81bbbdf624279114846a6b3403efa6ec0965e6f394fcea5ae836a76c70cfd729"
+  },
+  "outputs/review/P11-modern.jpg": {
+    "bytes": 59700,
+    "sha256": "0a853d6909a20153e637dc05ab214bfced11ae31316f1ad31f5bfefe1c57820c"
+  },
+  "outputs/review/P10-modern.jpg": {
+    "bytes": 80919,
+    "sha256": "0f903a3b3d5d17484bc31d564509dbdf1941b9de90ed9b90502b6a33687f1e34"
+  },
+  "outputs/review/P09-modern.jpg": {
+    "bytes": 94691,
+    "sha256": "1f980147c87e38f69e699ee09456557d210d78f3ed9bfd0c0115c9c5c2cd83b9"
+  },
+  "outputs/review/P06-historical.jpg": {
+    "bytes": 76893,
+    "sha256": "3ffbd71fc69b069d7d0699a8cd0b8021ab3101f0cafa4227d86f3fe27ef451f6"
+  },
+  "outputs/review/P02-modern.jpg": {
+    "bytes": 77380,
+    "sha256": "cd86fe1dad4b21aceb262c5158b8df5ea6db10b87bc9879a74c1de880da21280"
+  },
+  "outputs/review/P07-modern.jpg": {
+    "bytes": 58947,
+    "sha256": "3f2e033d519135ae720c8bfc237b41af45c1f494f3a7b8ab1b2f16f59ad6cd9c"
+  },
+  "outputs/review/P13-historical.jpg": {
+    "bytes": 93835,
+    "sha256": "67269d7bca04b307f306320be5ef7adaf7195c5d5140d410fccd81e9ecb4f53a"
+  },
+  "outputs/review/P09-historical.jpg": {
+    "bytes": 100183,
+    "sha256": "6a058658f828e77f77c1f99032aabc568f87772a74977ece9ed611342d3941a1"
+  },
+  "outputs/review/P10-historical.jpg": {
+    "bytes": 80961,
+    "sha256": "83fa9ec422bef5b108ffc1bd37b26a32f28be66aecd268589547215cc0552a41"
+  },
+  "outputs/review/P07-historical.jpg": {
+    "bytes": 71826,
+    "sha256": "dc5cf69d328a7e6ec4167bdbd7c3497a30d03423c4c2cd357585a1de846e84c3"
+  },
+  "outputs/review/P01-historical.jpg": {
+    "bytes": 104007,
+    "sha256": "ec923f9ff8525009409c9fd1b1b302344bf6b0d0af0e00e2ce642059ed7c4870"
+  },
+  "outputs/review/P13-modern.jpg": {
+    "bytes": 63546,
+    "sha256": "c444bdc3d9c3a80d20c8b7af547a32111eaa757a28a0c23aa728579c325f4589"
+  },
+  "data/reference/P12-modern.jpg": {
+    "bytes": 96837,
+    "sha256": "96e0da600afcf25cffe5e681b2bffe4a5ac038c1f110300e886907cb8c5c310d"
+  },
+  "data/reference/P05-modern.jpg": {
+    "bytes": 92006,
+    "sha256": "a28dabaae5311fc57a7ea2238fc68dd6a77470d812a632c08442fefd9c0486b0"
+  },
+  "data/reference/cape-fear-modern.jpg": {
+    "bytes": 338433,
+    "sha256": "cd8186e3abbd7eda41425027fbc287fab5f77f21dee6ed322a79b94e30be1256"
+  },
+  "data/reference/P08-modern.jpg": {
+    "bytes": 139544,
+    "sha256": "4177f3d4bcc2600eb75c791ce331d988e202825a2af608dd4b9f80f551836a87"
+  },
+  "data/reference/bath-modern.jpg": {
+    "bytes": 373669,
+    "sha256": "e8395462ba8ea893248c33091bcc2729c385ad167e377720d5bc6bc199c1733c"
+  },
+  "data/reference/P03-modern.jpg": {
+    "bytes": 134397,
+    "sha256": "c8d86b7ef78de2cad57a9218f09efa4cbd00fa382d3d6cb8979d78c95dc16754"
+  },
+  "data/reference/hertford-modern.jpg": {
+    "bytes": 323633,
+    "sha256": "d142577136ac28b70cf14e8c4c6d6f60406048305061bc50dacc38d963f1db4b"
+  },
+  "data/reference/salem-modern.jpg": {
+    "bytes": 442379,
+    "sha256": "15cfcb49bf9f372da69b5a81bdc660bdf9eb30b8ce83ec6dbb1114086f617182"
+  },
+  "data/reference/P06-modern.jpg": {
+    "bytes": 121976,
+    "sha256": "49e646b5b63ea371fcce3468b1454bebc206a9c57571e541abd13f84da53288c"
+  },
+  "data/reference/P01-modern.jpg": {
+    "bytes": 135347,
+    "sha256": "f344bcfa12640cb1c73934d2ea3c64fc840cf518e29e25728b8979ec42398667"
+  },
+  "data/reference/P04-modern.jpg": {
+    "bytes": 107048,
+    "sha256": "617a3b2eede14fcc89391ffff35af76696d3b61eec7e76db61ae451abb2191a8"
+  },
+  "data/reference/P11-modern.jpg": {
+    "bytes": 92755,
+    "sha256": "9ee3bc557401d34d58db00445ab6ef2db2479eb01aa40dd624a8be3787398604"
+  },
+  "data/reference/overview-modern.jpg": {
+    "bytes": 859651,
+    "sha256": "9c49a6ed4985a86350be646bd2e8e1be6b0957a929bd978f91dcbb265208b508"
+  },
+  "data/reference/P10-modern.jpg": {
+    "bytes": 125301,
+    "sha256": "801de215c15076b847f7f53a82867b32d0ee7e58adf355cd363626bc089187a5"
+  },
+  "data/reference/P09-modern.jpg": {
+    "bytes": 140111,
+    "sha256": "d4062faba5c4deef37252e594f40a365829989af5e13b6e81ea99d62d929fb8f"
+  },
+  "data/reference/P02-modern.jpg": {
+    "bytes": 120260,
+    "sha256": "5ca6c266454b43c44b7f48e385d9db5f94afcda745c2cde3cf23bc8ff420c04f"
+  },
+  "data/reference/P07-modern.jpg": {
+    "bytes": 95621,
+    "sha256": "54c9ce46266daf166861e90ebbac3e781bc10cfe2a39adaa672ccef15daaade3"
+  },
+  "data/reference/P13-modern.jpg": {
+    "bytes": 98465,
+    "sha256": "f7fdaeea9b4e95844ac5431cb5e0fe04abaf2946658c3360537a173d9960f1c2"
+  },
+  "data/points/selection.json": {
+    "bytes": 941,
+    "sha256": "22f25273cb3163c479d2309dba9d2201d2b26aa484acd6bf372d111299e732d2"
+  },
+  "data/points/checks.csv": {
+    "bytes": 1770,
+    "sha256": "bcf641d0ed5131a7e35d8d4b3fd7fe7dcb8cacfebd29f1ff3e41e068baaf180d"
+  },
+  "data/points/fitting.csv": {
+    "bytes": 3390,
+    "sha256": "c0f85223aa8b2df0b50c06255fb3dbe5b1121bc82b5a4525833a3635aa1d1789"
+  },
+  "data/points/mask.json": {
+    "bytes": 629,
+    "sha256": "3978f5a864b66668246a80d1aeb07de6dec3dc1a40bbfef694b9334f618e7899"
+  },
+  "data/points/candidates.csv": {
+    "bytes": 6306,
+    "sha256": "b4cdfdb9a4f3657791b4acdf51101ca6bb8104a87c660a8bcc801b038c4931e9"
+  },
+  "data/points/review.csv": {
+    "bytes": 6586,
+    "sha256": "9126e91e8830fa69c92a1bace5e5ab1cf68ae0b65fb2c0c60d3a082f7127797f"
+  },
+  "data/metadata/usgs-topo-service.json": {
+    "bytes": 7005,
+    "sha256": "2b55ddc11d81d5c51fd5f118eff1afd76a41d9f411122a55bab6a85df1860888"
+  },
+  "data/metadata/source.json": {
+    "bytes": 1616,
+    "sha256": "1e9c58321f9a0f2fca5f50ca64cb31075d35e9dbd1cc5dfe563632d1f9965d14"
+  }
+}

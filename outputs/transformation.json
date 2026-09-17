@@ -1,0 +1,56 @@
+{
+  "status": "PROVISIONAL: regional town-proxy experiment, not verified historical feature registration",
+  "model": "unweighted least-squares affine; 8 towns fit, 4 frozen checks",
+  "coefficient_rows": [
+    "pixel_x",
+    "pixel_y",
+    "constant"
+  ],
+  "coefficients_to_EPSG32119": [
+    [
+      51.032239863271144,
+      0.4137138316730142
+    ],
+    [
+      2.8483936542678396,
+      -44.23322873452237
+    ],
+    [
+      263023.05587587587,
+      369309.1497870068
+    ]
+  ],
+  "statistics": {
+    "fit": {
+      "n": 8,
+      "rmse_m": 6844.778342975569,
+      "median_m": 4532.199579191224,
+      "max_m": 13731.661767389123
+    },
+    "check": {
+      "n": 4,
+      "rmse_m": 8023.091485276809,
+      "median_m": 5534.630209117277,
+      "max_m": 13077.54133510193
+    }
+  },
+  "output_crs": "EPSG:32119 NAD83 / North Carolina, metres",
+  "resolution_m": 100.0,
+  "resampling": "Lanczos source reduction to approximately half dimensions, then bilinear affine warp; average overviews",
+  "source_dimensions": [
+    13949,
+    9524
+  ],
+  "reduced_source_dimensions": [
+    6975,
+    4762
+  ],
+  "mask": "data/points/mask.json; alpha band, transparent outside mask; no RGB nodata value",
+  "pixel_scale_singular_values_m": [
+    51.27154549291473,
+    44.04975775251417
+  ],
+  "anisotropy_ratio": 1.1639461397489383,
+  "jacobian_determinant": -2258.4991585599037,
+  "note": "Negative determinant expected because image y points down; affine has constant Jacobian and no local folding. Outside fit hull is extrapolation. Check errors include GNIS and symbol ambiguity. No polynomial/TPS fitted: insufficient exact controls, uneven coverage, no independent southern/western edge checks."
+}

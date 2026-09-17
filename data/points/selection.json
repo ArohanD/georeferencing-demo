@@ -1,0 +1,9 @@
+{
+  "status": "provisional town-proxy experiment",
+  "selection": "8 fitting and 4 checks fixed before first fit; no tuning against checks",
+  "pixel_convention": "Continuous image coordinates; upper-left outer corner=(0,0); x right, y down; pixel centers at n+0.5. Coordinates rounded to integer pixel-edge units, manual precision ~10\u201330 pixels, town symbol extent often larger. Source 13949 x 9524.",
+  "source_image": "collet-1770-loc-copy1.jp2",
+  "fit_sha256": "c0f85223aa8b2df0b50c06255fb3dbe5b1121bc82b5a4525833a3635aa1d1789",
+  "checks_sha256": "bcf641d0ed5131a7e35d8d4b3fd7fe7dcb8cacfebd29f1ff3e41e068baaf180d",
+  "inspection": "Whole image and enlarged crops inspected, followed by original-resolution 500 x 500 crops with crosshairs. Enlarged regional views used crop offset + displayed coordinate * original_crop_dimension/display_dimension. Final positions checked against original pixel coordinates in annotated crops."
+}

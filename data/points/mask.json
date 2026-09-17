@@ -1,0 +1,54 @@
+{
+  "coordinate_system": "original image pixel-edge coordinates",
+  "main_map_polygon": [
+    [
+      700,
+      700
+    ],
+    [
+      13350,
+      700
+    ],
+    [
+      13350,
+      5230
+    ],
+    [
+      12350,
+      5230
+    ],
+    [
+      12050,
+      6000
+    ],
+    [
+      11150,
+      6500
+    ],
+    [
+      10550,
+      6770
+    ],
+    [
+      9630,
+      7020
+    ],
+    [
+      9060,
+      7480
+    ],
+    [
+      9090,
+      8400
+    ],
+    [
+      8580,
+      8650
+    ],
+    [
+      650,
+      8650
+    ]
+  ],
+  "purpose": "Conservative decorative cartouche, border and scale-bar exclusion; no inset detected"
+}

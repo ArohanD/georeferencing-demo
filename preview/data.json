@@ -1,0 +1,537 @@
+{
+  "points": [
+    {
+      "point_id": "P01",
+      "feature_name": "Salisbury",
+      "pixel_x": "4012",
+      "pixel_y": "3463",
+      "longitude": "-80.4742261",
+      "latitude": "35.6709727",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "994186",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Original town square/grid; approximate symbol center.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        35.6709727,
+        -80.4742261
+      ],
+      "predicted_latlng": [
+        35.70453901726696,
+        -80.45847537656958
+      ]
+    },
+    {
+      "point_id": "P02",
+      "feature_name": "Hillsborough",
+      "pixel_x": "6438",
+      "pixel_y": "2538",
+      "longitude": "-79.0997348",
+      "latitude": "36.0754183",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "986830",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Town grid north of Eno River; approximate grid center.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        36.0754183,
+        -79.0997348
+      ],
+      "predicted_latlng": [
+        36.091039975589574,
+        -79.11996012503053
+      ]
+    },
+    {
+      "point_id": "P03",
+      "feature_name": "Bethania",
+      "pixel_x": "4288",
+      "pixel_y": "2310",
+      "longitude": "-80.3381077",
+      "latitude": "36.1823602",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1006108",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Bethania symbol, distinct from adjacent Bethabara and Salem.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        36.1823602,
+        -80.3381077
+      ],
+      "predicted_latlng": [
+        36.16656467051399,
+        -80.34679183562208
+      ]
+    },
+    {
+      "point_id": "P04",
+      "feature_name": "Halifax",
+      "pixel_x": "9138",
+      "pixel_y": "2170",
+      "longitude": "-77.5894199",
+      "latitude": "36.328486",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "986304",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Town symbol on south/west side of Roanoke River.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        36.328486,
+        -77.5894199
+      ],
+      "predicted_latlng": [
+        36.239853858380975,
+        -77.59898603480099
+      ]
+    },
+    {
+      "point_id": "P05",
+      "feature_name": "Edenton",
+      "pixel_x": "10905",
+      "pixel_y": "2580",
+      "longitude": "-76.6077213",
+      "latitude": "36.057938",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1025302",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Town grid on Albemarle Sound; not the label text.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        36.057938,
+        -76.6077213
+      ],
+      "predicted_latlng": [
+        36.0672188625429,
+        -76.58784190724447
+      ]
+    },
+    {
+      "point_id": "P06",
+      "feature_name": "New Bern",
+      "pixel_x": "10082",
+      "pixel_y": "4694",
+      "longitude": "-77.0441143",
+      "latitude": "35.1084931",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1013911",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Town grid at Trent/Neuse junction; NOT the Gov House label.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        35.1084931,
+        -77.0441143
+      ],
+      "predicted_latlng": [
+        35.22868484745198,
+        -77.00804575490056
+      ]
+    },
+    {
+      "point_id": "P07",
+      "feature_name": "Beaufort",
+      "pixel_x": "10564",
+      "pixel_y": "6025",
+      "longitude": "-76.6638186",
+      "latitude": "34.7182174",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1019024",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Mainland town symbol; no inlet/shoreline point used.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        34.7182174,
+        -76.6638186
+      ],
+      "predicted_latlng": [
+        34.69434054428719,
+        -76.71110086523757
+      ]
+    },
+    {
+      "point_id": "P08",
+      "feature_name": "Wilmington",
+      "pixel_x": "8313",
+      "pixel_y": "7348",
+      "longitude": "-77.9447102",
+      "latitude": "34.2257256",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1023269",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Town symbol on east side of Cape Fear below branch junction.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "fit",
+      "latlng": [
+        34.2257256,
+        -77.9447102
+      ],
+      "predicted_latlng": [
+        34.1753967137298,
+        -77.93073776165048
+      ]
+    },
+    {
+      "point_id": "P09",
+      "feature_name": "Salem",
+      "pixel_x": "4470",
+      "pixel_y": "2500",
+      "longitude": "-80.2464384",
+      "latitude": "36.0837485",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1022467",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Forsyth County Salem; not another same-name town or Winston-Salem centroid.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "check",
+      "latlng": [
+        36.0837485,
+        -80.2464384
+      ],
+      "predicted_latlng": [
+        36.09266046379243,
+        -80.23640361537068
+      ]
+    },
+    {
+      "point_id": "P10",
+      "feature_name": "Tarboro",
+      "pixel_x": "9123",
+      "pixel_y": "3209",
+      "longitude": "-77.5358049",
+      "latitude": "35.8968236",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1022886",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Tarrburg symbol beside Tar River bend.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "check",
+      "latlng": [
+        35.8968236,
+        -77.5358049
+      ],
+      "predicted_latlng": [
+        35.82535579434358,
+        -77.5818857615021
+      ]
+    },
+    {
+      "point_id": "P11",
+      "feature_name": "Hertford",
+      "pixel_x": "11136",
+      "pixel_y": "2220",
+      "longitude": "-76.4660519",
+      "latitude": "36.190158",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1025382",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Hartpford symbol at Perquimans River; spelling variant.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "check",
+      "latlng": [
+        36.190158,
+        -76.4660519
+      ],
+      "predicted_latlng": [
+        36.209127947328795,
+        -76.46386158089581
+      ]
+    },
+    {
+      "point_id": "P12",
+      "feature_name": "Bath",
+      "pixel_x": "10710",
+      "pixel_y": "4012",
+      "longitude": "-76.8116045",
+      "latitude": "35.4771094",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1018985",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Town symbol at Bath Creek; not modern shoreline vertex.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "check",
+      "latlng": [
+        35.4771094,
+        -76.8116045
+      ],
+      "predicted_latlng": [
+        35.49699292660443,
+        -76.66953765717122
+      ]
+    },
+    {
+      "point_id": "P13",
+      "feature_name": "Nixonton",
+      "pixel_x": "11589",
+      "pixel_y": "2230",
+      "longitude": "-76.2727126",
+      "latitude": "36.2007137",
+      "reference_crs": "EPSG:4269",
+      "gnis_id": "1025582",
+      "reference_source": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "matching_rationale": "Identifiable symbol, but colonial-core continuity not researched; northeast cluster already represented.",
+      "confidence": "medium identity; low-to-medium positional",
+      "ambiguity": "GNIS place proxy and generalized town symbol may differ by hundreds of metres or kilometres; no exact colonial landmark established.",
+      "role": "excluded",
+      "latlng": [
+        36.2007137,
+        -76.2727126
+      ],
+      "predicted_latlng": [
+        36.20123284273029,
+        -76.20665290764855
+      ]
+    },
+    {
+      "point_id": "P14",
+      "feature_name": "Brunswick Town",
+      "pixel_x": "8094",
+      "pixel_y": "7810",
+      "longitude": "",
+      "latitude": "",
+      "reference_crs": "",
+      "gnis_id": "",
+      "reference_source": "",
+      "matching_rationale": "Ruins potentially strong; modern Brunswick in Columbus County is a DIFFERENT place. Need archaeological town footprint coordinate.",
+      "confidence": "unresolved",
+      "ambiguity": "Ruins potentially strong; modern Brunswick in Columbus County is a DIFFERENT place. Need archaeological town footprint coordinate.",
+      "role": "excluded",
+      "predicted_latlng": [
+        33.991280510339536,
+        -78.03982998238294
+      ]
+    },
+    {
+      "point_id": "P15",
+      "feature_name": "Cross Creek",
+      "pixel_x": "6784",
+      "pixel_y": "4829",
+      "longitude": "",
+      "latitude": "",
+      "reference_crs": "",
+      "gnis_id": "",
+      "reference_source": "",
+      "matching_rationale": "Cross Creek and Campbellton were distinct; modern Fayetteville point not accepted.",
+      "confidence": "unresolved",
+      "ambiguity": "Cross Creek and Campbellton were distinct; modern Fayetteville point not accepted.",
+      "role": "excluded",
+      "predicted_latlng": [
+        35.178862733358045,
+        -78.85309827214753
+      ]
+    },
+    {
+      "point_id": "P16",
+      "feature_name": "Haw\u2013Deep river junction",
+      "pixel_x": "",
+      "pixel_y": "",
+      "longitude": "",
+      "latitude": "",
+      "reference_crs": "",
+      "gnis_id": "",
+      "reference_source": "",
+      "matching_rationale": "Potential natural anchor; exact channel junction and historical persistence not established. No coordinate guessed.",
+      "confidence": "unresolved",
+      "ambiguity": "Potential natural anchor; exact channel junction and historical persistence not established. No coordinate guessed.",
+      "role": "excluded"
+    }
+  ],
+  "views": [
+    {
+      "name": "overview",
+      "bbox_ll": [
+        -82.5,
+        33.5,
+        -75.2,
+        36.9
+      ],
+      "width": 1800,
+      "bbox_3857": [
+        -9183857.990445068,
+        3961860.2174457465,
+        -8371225.707654173,
+        4425177.227865094
+      ],
+      "height": 1026,
+      "leaflet_bounds": [
+        [
+          33.5,
+          -82.50091887589706
+        ],
+        [
+          36.9,
+          -75.19908112410293
+        ]
+      ]
+    },
+    {
+      "name": "salem",
+      "bbox_ll": [
+        -80.65,
+        35.88,
+        -79.98,
+        36.35
+      ],
+      "width": 1000,
+      "bbox_3857": [
+        -8977916.932477515,
+        4284122.095067954,
+        -8903332.87364602,
+        4348888.321298579
+      ],
+      "height": 868,
+      "leaflet_bounds": [
+        [
+          35.88,
+          -80.65014107671492
+        ],
+        [
+          36.349999999999994,
+          -79.97985892328504
+        ]
+      ]
+    },
+    {
+      "name": "bath",
+      "bbox_ll": [
+        -77.13,
+        35.23,
+        -76.48,
+        35.72
+      ],
+      "width": 1000,
+      "bbox_3857": [
+        -8586072.32488519,
+        4195181.319583607,
+        -8513714.655869562,
+        4262161.8868600875
+      ],
+      "height": 926,
+      "leaflet_bounds": [
+        [
+          35.22991695693832,
+          -77.12999999999998
+        ],
+        [
+          35.720082538402345,
+          -76.47999999999999
+        ]
+      ]
+    },
+    {
+      "name": "hertford",
+      "bbox_ll": [
+        -76.8,
+        35.96,
+        -76.14,
+        36.43
+      ],
+      "width": 1000,
+      "bbox_3857": [
+        -8549336.89292341,
+        4295118.8286723085,
+        -8475866.028999848,
+        4359951.166044345
+      ],
+      "height": 882,
+      "leaflet_bounds": [
+        [
+          35.96,
+          -76.8001580474291
+        ],
+        [
+          36.42999999999999,
+          -76.13984195257088
+        ]
+      ]
+    },
+    {
+      "name": "cape-fear",
+      "bbox_ll": [
+        -78.3,
+        33.72,
+        -77.62,
+        34.38
+      ],
+      "width": 1000,
+      "bbox_3857": [
+        -8716316.12911332,
+        3991266.5474793096,
+        -8640618.875373894,
+        4079941.589383729
+      ],
+      "height": 1171,
+      "leaflet_bounds": [
+        [
+          33.72,
+          -78.30012871674928
+        ],
+        [
+          34.38,
+          -77.61987128325075
+        ]
+      ]
+    }
+  ],
+  "hull": [
+    [
+      34.1753967137298,
+      -77.93073776165048
+    ],
+    [
+      35.70453901726696,
+      -80.45847537656958
+    ],
+    [
+      36.16656467051399,
+      -80.34679183562208
+    ],
+    [
+      36.239853858380975,
+      -77.59898603480099
+    ],
+    [
+      36.0672188625429,
+      -76.58784190724447
+    ],
+    [
+      34.69434054428719,
+      -76.71110086523757
+    ],
+    [
+      34.1753967137298,
+      -77.93073776165048
+    ]
+  ],
+  "statistics": {
+    "fit": {
+      "n": 8,
+      "rmse_m": 6844.778342975569,
+      "median_m": 4532.199579191224,
+      "max_m": 13731.661767389123
+    },
+    "check": {
+      "n": 4,
+      "rmse_m": 8023.091485276809,
+      "median_m": 5534.630209117277,
+      "max_m": 13077.54133510193
+    }
+  }
+}

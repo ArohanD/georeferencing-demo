@@ -1,0 +1,40 @@
+{
+  "valid": true,
+  "errors": [],
+  "warnings": [],
+  "crs": "EPSG:32119",
+  "size": [
+    7390,
+    4271
+  ],
+  "bands": 4,
+  "color_interpretations": [
+    "red",
+    "green",
+    "blue",
+    "alpha"
+  ],
+  "overviews": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "image_structure": {
+    "LAYOUT": "COG",
+    "COMPRESSION": "DEFLATE",
+    "INTERLEAVE": "PIXEL",
+    "OVERVIEW_RESAMPLING": "AVERAGE"
+  },
+  "bounds": [
+    263000.0,
+    -52000.0,
+    1002000.0,
+    375100.0
+  ],
+  "resolution": [
+    100.0,
+    100.0
+  ],
+  "alpha_nonzero_fraction": 0.662994384765625
+}

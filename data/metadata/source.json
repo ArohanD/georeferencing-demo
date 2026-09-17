@@ -1,0 +1,21 @@
+{
+  "title": "A compleat map of North-Carolina from an actual survey",
+  "creator": "John Collet; engraved by J. Bayly; published by S. Hooper",
+  "edition_date": "London, May 1, 1770",
+  "institution": "Library of Congress, Geography and Map Division",
+  "record_url": "https://www.loc.gov/item/83693769/",
+  "resource_url": "https://www.loc.gov/resource/g3900.ar150000/",
+  "download_url": "https://tile.loc.gov/storage-services/service/gmd/gmd390/g3900/g3900/ar150000.jp2",
+  "copy": "LOC Copy 1, cataloged 1770 impression; digital JP2 service derivative of institutional scan, NOT a downloaded TIFF master or a later printed facsimile. Paper history not independently examined.",
+  "dimensions": [
+    13949,
+    9524
+  ],
+  "bytes": 20059574,
+  "sha256": "ddda5ee92d091ed5aca1ee8d63d43b6f349264770073041ea4be60a523705591",
+  "access_date": "2026-09-17",
+  "rights": "LOC Geography and Map Division says digitized content is free to use and reuse unless a Rights Advisory indicates otherwise. No restrictive advisory identified in this item. Credit Library of Congress, Geography and Map Division.",
+  "selection_reason": "Full native dimensions, direct institutional download, documented catalog and reuse terms. UNC leads inaccessible beyond access shell; no global claim that this is the finest surviving scan. Copy 2 also cataloged, but not processed.",
+  "unc_leads": "Both supplied UUIDs returned access-app shells; identities unresolved. NCpedia identifies separate legacy ncmaps/467 as Collet.",
+  "preservation": "Original JP2 unchanged. All warps, masks, thumbnails and annotations are derivatives."
+}
