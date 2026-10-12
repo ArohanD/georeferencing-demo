@@ -20,7 +20,13 @@ fs.mkdirSync(out, {recursive: true});
   try {
     await page.goto(base);
     assert.equal(await page.locator('#visible').isChecked(), false);
-    assert.equal(await page.locator('#terrain').inputValue(), 'hillshade');
+    assert.equal(await page.locator('#terrain').inputValue(), 'none');
+    assert.equal(await page.locator(terrainImages).count(), 0);
+    assert.equal(requestUrls.filter(terrainUrl).length, 0);
+    assert.equal(await page.locator('#terrain-opacity').isDisabled(), true);
+    assert.equal(await page.locator('#terrain-key').isVisible(), false);
+    result.tests.push('LiDAR defaults off without terrain requests; opacity disabled and legend hidden');
+    await page.locator('#terrain').selectOption('hillshade');
     await loaded();
     assert.equal(await page.locator('#terrain-location').inputValue(), 'eno');
     await page.locator('#terrain-location').selectOption('state');

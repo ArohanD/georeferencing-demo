@@ -50,6 +50,8 @@
   function showHistorical() {
     if (overlay) map.removeLayer(overlay);
     const layer = selection();
+    el('layer-diagnostic').hidden = !el('visible').checked;
+    el('layer-diagnostic').textContent = ' ' + layer.diagnostic + ' These are uncertain historical correspondences, not survey-grade accuracy estimates.';
     if (!el('visible').checked) {
       status('layer-status', 'Historical map hidden.');
       return;
@@ -79,6 +81,7 @@
   }
 
   config.terrain.modes.forEach(item => el('terrain').add(new Option(item.label, item.id)));
+  el('terrain').value = config.terrain.defaultMode;
   config.terrain.examples.forEach(item => el('terrain-location').add(new Option(item.label, item.id)));
   config.terrain.slopeLegend.forEach(item => {
     const row = document.createElement('div');

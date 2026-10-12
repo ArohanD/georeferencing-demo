@@ -88,6 +88,31 @@ fs.mkdirSync(out, {recursive: true});
     assert.equal(await page.locator('#historical-layer option[value="local"]').count(), 0);
     result.tests.push('live USGS imagery and attribution, no basemap, OSM switching, no proof-of-concept controls');
 
+    for (const [id, credit, rmse] of [['wimble_1738', /East Carolina University.*Educational use/, '21.3'], ['bowen_1747', /University of Georgia/, '13.9']]) {
+      await page.locator('#historical-layer').selectOption(id);
+      await page.waitForTimeout(500);
+      await loaded();
+      assert.ok(await page.locator(wmsImages + '.leaflet-tile-loaded').count() > 0);
+      assert.ok(await page.locator(wmsImages).first().evaluate((img, id) => new URL(img.src).searchParams.get('layers') === 'history:' + id, id));
+      assert.match(await page.locator('.leaflet-control-attribution').textContent(), credit);
+      assert.ok((await page.locator('#layer-diagnostic').textContent()).includes(rmse));
+      await page.locator('#opacity').fill('40');
+      assert.equal(await page.locator(wmsImages).first().evaluate(img => img.closest('.leaflet-layer').style.opacity), '0.4');
+      await page.locator('#visible').uncheck();
+      assert.equal(await page.locator(wmsImages).count(), 0);
+      assert.ok(await page.locator('#layer-diagnostic').isHidden());
+      await page.locator('#visible').check();
+      await loaded();
+      await page.locator('.leaflet-control-zoom-in').click();
+      await page.waitForTimeout(500);
+      await loaded();
+      await page.locator('#fit').click();
+      await page.waitForTimeout(500);
+      await loaded();
+      await page.screenshot({path: `${out}/live-${id}.png`, fullPage: true});
+    }
+    result.tests.push('live Wimble and Bowen imagery, attribution/rights, diagnostics, opacity, visibility, zoom and fit');
+
     assert.deepEqual(errors, []);
     // Leaflet cancels superseded image requests during animated pan/zoom and layer removal.
     assert.deepEqual(failed.filter(item => item.error.errorText !== 'net::ERR_ABORTED'), []);
@@ -98,7 +123,7 @@ fs.mkdirSync(out, {recursive: true});
       assert.match(response.headers()['content-type'], /^image\/png/);
       assert.equal(response.request().redirectedFrom(), null);
       const url = new URL(response.url());
-      assert.equal(url.searchParams.get('layers'), 'history:collet_1770');
+      assert.ok(['history:collet_1770', 'history:wimble_1738', 'history:bowen_1747'].includes(url.searchParams.get('layers')));
       assert.equal(url.searchParams.get('srs'), 'EPSG:3857');
     }
     const png = await wms[0].body();

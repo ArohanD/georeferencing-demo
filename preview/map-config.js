@@ -1,6 +1,6 @@
 'use strict';
 // Public browser configuration; no credentials or build-time environment variables.
-// Bounds/credits copied from data/historical_maps/integration-manifest.json.
+// Bounds/credits from data/historical_maps/integration-manifest.json and per-map manifests.
 window.HISTORICAL_MAP_CONFIG = {
   endpoint: 'https://vclvm176-164.vclgis.cnr.ncsu.edu/geoserver/history/wms',
   version: '1.1.1', // EPSG:3857 x/y BBOX; avoids WMS 1.3.0 geographic axis ambiguity.
@@ -22,7 +22,7 @@ window.HISTORICAL_MAP_CONFIG = {
   ],
   terrain: {
     bounds: [[33.75, -84.33], [36.59, -75.40]],
-    minZoom: 12, maxZoom: 19, inspectZoom: 16, defaultExample: 'eno',
+    minZoom: 12, maxZoom: 19, inspectZoom: 16, defaultExample: 'eno', defaultMode: 'none',
     attribution: '<a href="https://services.nconemap.gov/secure/rest/services/Elevation">NC OneMap · NC Floodplain Mapping Program / NC Emergency Management</a>',
     modes: [
       {id: 'hillshade', label: 'NC LiDAR hillshade', endpoint: 'https://services.nconemap.gov/secure/rest/services/Elevation/DEM03_hillshade/ImageServer'},
@@ -47,6 +47,42 @@ window.HISTORICAL_MAP_CONFIG = {
       bounds: [[33.20633801651209, -82.89696376311606], [37.13076192130217, -74.5875473850105]],
       attribution: '<a href="https://www.loc.gov/resource/g3900.ar150000/">Library of Congress, Geography and Map Division</a>',
       diagnostic: 'Collet: approximately 8 km RMSE across four held-out town proxies.'
+    },
+    {
+      "id": "wimble_1738",
+      "label": "Wimble 1738",
+      "name": "history:wimble_1738",
+      "available": true,
+      "bounds": [
+        [
+          33.38386554099789,
+          -79.21559606346874
+        ],
+        [
+          36.36069944629204,
+          -73.82907304106705
+        ]
+      ],
+      "attribution": "<a href=\"https://digital.lib.ecu.edu/1068\">Joyner Library, East Carolina University · NC Archives reproduction</a> · <a href=\"https://rightsstatements.org/vocab/InC-EDU/1.0/\">Educational use</a>",
+      "diagnostic": "Wimble: approximately 21.3 km RMSE across three held-out cape proxies."
+    },
+    {
+      "id": "bowen_1747",
+      "label": "Bowen 1747 · coastal NC excerpt",
+      "name": "history:bowen_1747",
+      "available": true,
+      "bounds": [
+        [
+          33.44890092237239,
+          -80.07100881818707
+        ],
+        [
+          36.80557338937635,
+          -74.68111711346994
+        ]
+      ],
+      "attribution": "<a href=\"https://dlg.usg.edu/record/guan_hmap_hmap1747b6\">Hargrett Library, University of Georgia / Digital Library of Georgia</a>",
+      "diagnostic": "Bowen coastal NC excerpt: approximately 13.9 km RMSE across three held-out cape proxies."
     },
     {
       id: 'moseley_1733', label: 'Moseley 1733 · unavailable',
