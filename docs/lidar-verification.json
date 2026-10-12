@@ -1,0 +1,42 @@
+{
+  "terrain_browser": {
+    "base": "http://127.0.0.1:8000/publish/app-lidar/preview/",
+    "checkedAt": "2026-10-12T21:27:20.288Z",
+    "tests": [
+      "opens with a labeled Eno terrain example; statewide overview pauses detail requests; historical map defaults off",
+      "real NC LiDAR hillshade renders near Eno River with source attribution",
+      "independent terrain opacity, historical comparison and layer order",
+      "real slope imagery and original provider legend in degrees",
+      "detail zoom and drag request new Web Mercator terrain BBOX tiles",
+      "western NC, Haw and Neuse public navigation examples load terrain",
+      "terrain off preserves basemap and clears legend",
+      "PNG responses, meter BBOX ordering, normal HTTPS/TLS and no unexpected request or script errors",
+      "terrain service outage leaves basemap usable; retry recovers",
+      "statewide navigation suspends terrain requests; Inspect here loads detailed terrain",
+      "mobile controls fit without horizontal overflow"
+    ],
+    "liveTerrainResponses": 84
+  },
+  "historical_regression": {
+    "base": "http://127.0.0.1:8000/publish/app-lidar/preview/",
+    "checkedAt": "2026-10-12T21:27:20.289Z",
+    "tests": [
+      "live Collet PNG imagery, OSM, credits, disclaimer, unavailable Moseley",
+      "visibility and opacity retain the basemap",
+      "zoom and drag issue new WMS BBOX requests; fit returns to historical extent",
+      "live USGS imagery and attribution, no basemap, OSM switching, no proof-of-concept controls",
+      "no TLS/mixed-content/auth-redirect/CORS/request/JavaScript errors in live browser run",
+      "server outage preserves basemap and visibility controls; retry recovers",
+      "loading timeout and removal cancel stale status updates",
+      "mobile width has no horizontal overflow"
+    ],
+    "cancelledImageRequests": 2,
+    "liveWmsResponses": 81
+  },
+  "other_checks": [
+    "JavaScript syntax and Git whitespace checks passed",
+    "Nine-file static package hashes, source parity and relative links passed",
+    "512px sample PNGs have nonuniform imagery; screenshots visually inspected"
+  ],
+  "deployment": "Not pushed or deployed"
+}
