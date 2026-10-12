@@ -25,6 +25,10 @@ fs.mkdirSync(out, {recursive: true});
   const result = {base, checkedAt: new Date().toISOString(), tests: []};
   try {
     await page.goto(base);
+    await page.locator('#terrain').selectOption('none');
+    await page.locator('#visible').check();
+    await page.locator('#fit').click();
+    await page.waitForTimeout(500);
     await loaded();
     assert.equal(await page.locator('#historical-layer option[value="moseley_1733"]').evaluate(option => option.disabled), true);
     assert.ok(await page.locator(wmsImages + '.leaflet-tile-loaded').count() > 0);
@@ -126,6 +130,7 @@ fs.mkdirSync(out, {recursive: true});
       await route.abort('timedout').catch(() => {});
     });
     await slow.goto(base, {waitUntil: 'domcontentloaded'});
+    await slow.locator('#visible').check();
     await slow.waitForFunction(() => document.getElementById('layer-status').textContent.includes('taking too long'));
     await slow.locator('#visible').uncheck();
     await slow.waitForTimeout(1500);

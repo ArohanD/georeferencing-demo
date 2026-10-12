@@ -20,6 +20,26 @@ window.HISTORICAL_MAP_CONFIG = {
     },
     {id: 'none', label: 'None'}
   ],
+  terrain: {
+    bounds: [[33.75, -84.33], [36.59, -75.40]],
+    minZoom: 12, maxZoom: 19, inspectZoom: 16, defaultExample: 'eno',
+    attribution: '<a href="https://services.nconemap.gov/secure/rest/services/Elevation">NC OneMap · NC Floodplain Mapping Program / NC Emergency Management</a>',
+    modes: [
+      {id: 'hillshade', label: 'NC LiDAR hillshade', endpoint: 'https://services.nconemap.gov/secure/rest/services/Elevation/DEM03_hillshade/ImageServer'},
+      {id: 'slope', label: 'NC LiDAR slope', endpoint: 'https://services.nconemap.gov/secure/rest/services/Elevation/DEM03_slope/ImageServer'},
+      {id: 'none', label: 'Off'}
+    ],
+    // Public navigation examples, not proposed or validated historical crossings.
+    examples: [
+      {id: 'state', label: 'North Carolina overview'},
+      {id: 'french-broad', label: 'French Broad · Asheville example', center: [35.592, -82.568]},
+      {id: 'eno', label: 'Eno River · Hillsborough example', center: [36.07, -79.10]},
+      {id: 'haw', label: 'Haw River · Saxapahaw example', center: [35.947, -79.321]},
+      {id: 'neuse', label: 'Neuse River · Smithfield example', center: [35.511, -78.35]}
+    ],
+    // Original NC service legend swatches, captured 2026-10-12; slope is in degrees.
+    slopeLegend: [{"label": "90\u00b0 \u00b7 steep", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAAAAAAAAAHqZRakAAAAT0lEQVQ4jeWUsQ0AMQgDbYkyKfL7rwqkyApXIL0HOBnbwi21IFWmQ5vCPYUWDTw0ED95PnB+hrhDfIc/bBnP8KOB01t2N/ixKx1VaQooSRd16Q8hzMyREgAAAABJRU5ErkJggg=="}, {"label": "", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAAAAAAAAAHqZRakAAAAYElEQVQ4jc3SyQ2AMBQD0Yn0hTjRf5lBkEWgJDQxB1zAO9hOa7GQMudIkbvFwbFBlCmCQNyvB7JDXCYIRLbB8sig2iEQ1QZPG+ziDwGi2qPoHeort9+D/fdgGy6YxnDFDxjdLEWDRcapAAAAAElFTkSuQmCC"}, {"label": "0\u00b0 \u00b7 flat", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAAAAAAAAAHqZRakAAAAIUlEQVQ4jWP8+/cvAzUBE1VNGzVw1MBRA0cNHDVwCBkIAEMfAx/78kANAAAAAElFTkSuQmCC"}]
+  },
   layers: [
     {
       id: 'collet_1770', label: 'Collet 1770',

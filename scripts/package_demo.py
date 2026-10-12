@@ -5,9 +5,9 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEST = ROOT / 'publish' / 'app'
+DEST = ROOT / 'publish' / 'app-lidar'
 FILES = ['index.html', '.nojekyll', 'preview/index.html', 'preview/app.js',
-         'preview/map-config.js', 'preview/leaflet.js', 'preview/leaflet.css',
+         'preview/map-config.js', 'preview/terrain-layer.js', 'preview/leaflet.js', 'preview/leaflet.css',
          'preview/LEAFLET-LICENSE']
 DEST.mkdir(parents=True, exist_ok=True)
 # Refuse unexpected old payloads instead of including or deleting them.

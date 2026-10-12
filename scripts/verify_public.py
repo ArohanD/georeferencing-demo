@@ -4,7 +4,7 @@ from pathlib import Path
 import requests
 R=Path(__file__).resolve().parents[1]
 base='https://arohand.github.io/georeferencing-demo/'
-local=json.loads((R/'publish/app/PUBLICATION-MANIFEST.json').read_text())
+local=json.loads((R/'publish/app-lidar/PUBLICATION-MANIFEST.json').read_text())
 response=requests.get(base+'PUBLICATION-MANIFEST.json',timeout=45);response.raise_for_status()
 assert response.json()==local,'Published manifest differs from audited package'
 def check(item):
