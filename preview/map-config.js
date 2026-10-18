@@ -22,7 +22,7 @@ window.HISTORICAL_MAP_CONFIG = {
   ],
   terrain: {
     bounds: [[33.75, -84.33], [36.59, -75.40]],
-    minZoom: 12, maxZoom: 19, inspectZoom: 16, defaultExample: 'eno', defaultMode: 'none',
+    minZoom: 5, maxZoom: 19, inspectZoom: 16, defaultExample: 'eno', defaultMode: 'none',
     attribution: '<a href="https://services.nconemap.gov/secure/rest/services/Elevation">NC OneMap · NC Floodplain Mapping Program / NC Emergency Management</a>',
     modes: [
       {id: 'hillshade', label: 'NC LiDAR hillshade', endpoint: 'https://services.nconemap.gov/secure/rest/services/Elevation/DEM03_hillshade/ImageServer'},

@@ -11,7 +11,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 Open http://localhost:8000/ . Live imagery requires internet.
 
 - **Terrain:** choose NC LiDAR hillshade, NC LiDAR slope, or Off. No terrain imagery is requested until you enable a terrain layer. Terrain opacity blends it with the selected basemap. Slope includes the provider's legend in degrees.
-- **Explore:** navigate to the state overview or public river examples. **Inspect here** zooms the current center to detail. Terrain loads at zoom 12–19; the overview uses the basemap until you zoom in.
+- **Explore:** navigate to the state overview or public river examples. **Inspect here** zooms the current center to detail. Terrain loads at zoom 5–19, including statewide views. Overview images show broad terrain; zoom in to examine banks and approaches. Requests remain fixed at 512 × 512 pixels per tile.
 - **Historical layer / Show historical / Opacity:** compare Collet 1770, Wimble 1738, or Bowen 1747 (coastal NC excerpt) with the terrain independently. Historical imagery starts hidden to make terrain legible. **Fit** returns to the historical map extent. Moseley remains unavailable pending GeoServer publication.
 - **Basemap:** OpenStreetMap, USGS Topographic, or None. **Retry** reloads active imagery after service errors.
 

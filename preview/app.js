@@ -102,7 +102,8 @@
     el('slope-legend').hidden = source.id !== 'slope';
     el('terrain-hint').textContent = !enabled ? 'Terrain hidden.' : !inBounds
       ? 'Outside North Carolina coverage. Choose NC overview or a river example.'
-      : !detailed ? 'Zoom in to level 12+ or choose a river example to load terrain. Inspect here jumps to detail.'
+      : !detailed ? `Zoom in to level ${config.terrain.minZoom}+ to load terrain. Inspect here jumps to detail.`
+      : map.getZoom() < 12 ? 'Terrain overview: zoom in or use Inspect here to examine banks and approaches. Transparent gaps mean no data.'
       : 'Inspect banks, terraces and approaches. Transparent gaps mean no data, not flat terrain.';
     if (overlay && map.hasLayer(overlay) && enabled && detailed) {
       el('terrain-hint').textContent += ' Historical map is visible; hide it for a clear terrain view.';
