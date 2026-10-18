@@ -16,9 +16,18 @@ class Links(HTMLParser):
     def __init__(self):
         super().__init__()
         self.links = []
+        self.ids = set()
+        self.redirects = []
 
     def handle_starttag(self, tag, attrs):
         self.links.extend(value for key, value in attrs if key in ('src', 'href') and value)
+        attributes = dict(attrs)
+        if attributes.get('id'):
+            self.ids.add(attributes['id'])
+        if tag == 'meta' and attributes.get('http-equiv', '').lower() == 'refresh':
+            target = attributes.get('content', '').split('url=', 1)[-1].strip()
+            self.redirects.append(target)
+            self.links.append(target)
 
 
 def check_link(page, link):
@@ -68,6 +77,13 @@ def main():
         assert content == (PUBLIC/name).read_bytes(), f'Stale packaged asset: {name}'
         assert len(content) == info['bytes']
         assert hashlib.sha256(content).hexdigest() == info['sha256']
+    landing = Links()
+    landing.feed((PACKAGE/'index.html').read_text())
+    assert 'map' in landing.ids, 'The site root must contain the app'
+    assert not landing.redirects, 'The site root must not redirect to a subpage'
+    legacy = Links()
+    legacy.feed((PACKAGE/'preview/index.html').read_text())
+    assert legacy.redirects == ['../'], 'Legacy preview links must redirect to the site root'
     print(f'Passed: {len(pages)} HTML pages, {len(markdown)} Markdown files, '
           f'{roots} script roots, and {len(manifest)} packaged assets.')
 

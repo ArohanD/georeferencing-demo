@@ -11,7 +11,7 @@ Do these steps before pushing the new workflow:
 1. Open the repository's **Settings → Pages**. Under **Build and deployment → Source**, choose **GitHub Actions**. Do not create one of the suggested workflows; this repo already contains one.
 2. Open **Settings → Environments → github-pages**. Under **Deployment branches and tags**, ensure the `main` branch is allowed. If selected branches are used, add a branch rule named `main`; keep any other rules you still need.
 3. From the monorepo root, push the committed changes with `git push origin main`.
-4. Open **Actions → Deploy viewer to GitHub Pages**. Wait for both `build` and `deploy` to succeed, then visit https://arohand.github.io/georeferencing-demo/ . The `/preview/` path remains supported.
+4. Open **Actions → Deploy viewer to GitHub Pages**. Wait for both `build` and `deploy` to succeed, then visit https://arohand.github.io/georeferencing-demo/ . The app loads directly at the site root; old `/preview/` links redirect there.
 
 If an earlier workflow run failed before the settings were ready, open that run and choose **Re-run all jobs** after correcting the settings. You do not need another commit.
 
@@ -29,7 +29,7 @@ python3 tools/check_layout.py
 python3 -m http.server 8001 --bind 127.0.0.1 --directory app/dist
 ```
 
-Open http://localhost:8001/ . The `dist/` directory is ignored and can be regenerated. The build preserves the deployed URL structure and writes a checksummed `PUBLICATION-MANIFEST.json`. It does not push or publish.
+Open http://localhost:8001/ . The `dist/` directory is ignored and can be regenerated. The build serves the app at the site root and writes a checksummed `PUBLICATION-MANIFEST.json`. It does not push or publish.
 
 After deployment, verify the public files against the same local build:
 

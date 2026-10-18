@@ -33,7 +33,7 @@ class Links(HTMLParser):
  def __init__(self):super().__init__();self.links=[]
  def handle_starttag(self,tag,attrs):
   self.links.extend(v for k,v in attrs if k in ['src','href'])
-for page in [R/'app/public/preview/index.html', R/'research/review.html']:
+for page in [R/'app/public/index.html', R/'app/public/preview/index.html', R/'research/review.html']:
  parser=Links();parser.feed(page.read_text())
  for link in parser.links:
   if not link.startswith(('https:','http:','#')):assert (page.parent/link).exists(),link

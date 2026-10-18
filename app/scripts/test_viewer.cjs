@@ -2,7 +2,7 @@
 const {chromium} = require('playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
-const base = process.argv[2] || 'http://127.0.0.1:8000/preview/';
+const base = process.argv[2] || 'http://127.0.0.1:8000/';
 const out = process.argv[3] || '/tmp/georef-app-validation';
 fs.mkdirSync(out, {recursive: true});
 

@@ -32,7 +32,7 @@ python3 app/scripts/package_demo.py
 python3 tools/check_layout.py
 ```
 
-Deploy only `app/dist/`. Its existing root redirect and `/preview/` URL are preserved. Building does not publish anything. See [viewer publishing](app/deployment/README.md) for the GitHub Pages workflow and one-time setup.
+Deploy only `app/dist/`. The site root opens the app directly; old `/preview/` links redirect to it. Building does not publish anything. See [viewer publishing](app/deployment/README.md) for the GitHub Pages workflow and one-time setup.
 
 ## Processing and research
 

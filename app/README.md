@@ -10,7 +10,7 @@ All commands below run from the repository root.
 python3 -m http.server 8000 --bind 127.0.0.1 --directory app/public
 ```
 
-Open http://localhost:8000/ . Live imagery requires internet.
+Open http://localhost:8000/ . The app loads directly at this URL; old `/preview/` links redirect here. Live imagery requires internet.
 
 - **Terrain:** choose NC LiDAR hillshade, NC LiDAR slope, or Off. No terrain imagery is requested until you enable a terrain layer. Terrain opacity blends it with the selected basemap. Slope includes the provider's legend in degrees.
 - **Explore:** navigate to the state overview or public river examples. **Inspect here** zooms the current center to detail. Terrain loads at zoom 5–19, including statewide views. Overview images show broad terrain; zoom in to examine banks and approaches. Requests remain fixed at 512 × 512 pixels per tile.
