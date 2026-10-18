@@ -4,7 +4,7 @@ on:
   push:
     branches: [app]
     paths:
-      - 'apps/viewer/**'
+      - 'app/**'
       - '.github/workflows/deploy-viewer.yml'
       - 'tools/check_layout.py'
   workflow_dispatch:
@@ -22,17 +22,17 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Build viewer
-        run: python3 apps/viewer/scripts/package_demo.py
+        run: python3 app/scripts/package_demo.py
       - name: Validate viewer package
         run: |
           python3 tools/check_layout.py
-          node --check apps/viewer/public/preview/app.js
-          node --check apps/viewer/public/preview/map-config.js
-          node --check apps/viewer/public/preview/terrain-layer.js
+          node --check app/public/preview/app.js
+          node --check app/public/preview/map-config.js
+          node --check app/public/preview/terrain-layer.js
       - name: Upload viewer artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: apps/viewer/dist
+          path: app/dist
 
   deploy:
     if: github.ref == 'refs/heads/app'

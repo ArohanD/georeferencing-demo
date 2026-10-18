@@ -7,7 +7,7 @@ All commands below run from the repository root.
 ## Use
 
 ```bash
-python3 -m http.server 8000 --bind 127.0.0.1 --directory apps/viewer/public
+python3 -m http.server 8000 --bind 127.0.0.1 --directory app/public
 ```
 
 Open http://localhost:8000/ . Live imagery requires internet.
@@ -23,35 +23,35 @@ Approximate historical-map alignment. For visual comparison only; not suitable f
 
 ## Sources and configuration
 
-See [LiDAR sources and verification](../../docs/lidar-integration.md). NC OneMap describes these products as derived from a 3-foot LiDAR DEM; the service reports a 3.125 US survey-foot pixel grid (about 0.95 m). Zooming closer does not improve the source resolution. This app displays derived raster terrain, not a raw 3D point cloud.
+See [LiDAR sources and verification](../docs/lidar-integration.md). NC OneMap describes these products as derived from a 3-foot LiDAR DEM; the service reports a 3.125 US survey-foot pixel grid (about 0.95 m). Zooming closer does not improve the source resolution. This app displays derived raster terrain, not a raw 3D point cloud.
 
-Public endpoints, bounds, source credits, example views and display options are in `apps/viewer/public/preview/map-config.js`. Leaflet 1.9.4 and its license remain bundled. `apps/viewer/public/preview/terrain-layer.js` requests projected PNG imagery from the provider; no framework, dependency, API key, database or app environment variable was added. No private research data is loaded or published.
+Public endpoints, bounds, source credits, example views and display options are in `app/public/preview/map-config.js`. Leaflet 1.9.4 and its license remain bundled. `app/public/preview/terrain-layer.js` requests projected PNG imagery from the provider; no framework, dependency, API key, database or app environment variable was added. No private research data is loaded or published.
 
 ## Build
 
 ```bash
-python3 apps/viewer/scripts/package_demo.py
-python3 -m http.server 8001 --bind 127.0.0.1 --directory apps/viewer/dist
+python3 app/scripts/package_demo.py
+python3 -m http.server 8001 --bind 127.0.0.1 --directory app/dist
 ```
 
-Review http://localhost:8001/ . Only `apps/viewer/dist/` is the deployment artifact; it contains nine app/assets files plus a checksummed manifest. Other local processing/archive files are excluded. Nothing is pushed or published by these commands. The build includes the two published colonial map configurations.
+Review http://localhost:8001/ . Only `app/dist/` is the deployment artifact; it contains nine app/assets files plus a checksummed manifest. Other local processing/archive files are excluded. Nothing is pushed or published by these commands. The build includes the two published colonial map configurations.
 
 ## Verify
 
 ```bash
-node --check apps/viewer/public/preview/app.js
-node --check apps/viewer/public/preview/map-config.js
-node --check apps/viewer/public/preview/terrain-layer.js
+node --check app/public/preview/app.js
+node --check app/public/preview/map-config.js
+node --check app/public/preview/terrain-layer.js
 npm install --prefix /tmp/georef-browser --no-audit --no-fund playwright
 PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers /tmp/georef-browser/node_modules/.bin/playwright install chromium
-NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node apps/viewer/scripts/test_terrain.cjs
-NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node apps/viewer/scripts/test_viewer.cjs
+NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node app/scripts/test_terrain.cjs
+NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node app/scripts/test_viewer.cjs
 ```
 
 Keep the localhost server running. Optional test arguments are the viewer URL and evidence output directory. Test-only shell variables configure Playwright; the app itself needs none. Tests cover actual imagery, Web Mercator tile extents, terrain/source selection, opacity, historical comparison, regional examples, pan/zoom, loading/errors/retry, and mobile layout. Results and screenshots go under `/tmp/georef-lidar-validation` for terrain, and the original viewer suite's configured output directory.
 
-The [original GeoServer notes](../../docs/geoserver-integration.md#publish-moseley-on-the-vcl-server) retain Moseley's publication steps. Their older local-comparison/build descriptions apply to the integration branch.
+The [original GeoServer notes](../docs/geoserver-integration.md#publish-moseley-on-the-vcl-server) retain Moseley's publication steps. Their older local-comparison/build descriptions apply to the integration branch.
 
 ## Publish
 
-See [GitHub Pages setup](deployment/README.md). The app builds into `apps/viewer/dist/`; deployment uploads only that folder. Verification reports go to the ignored `apps/viewer/artifacts/` directory.
+See [GitHub Pages setup](deployment/README.md). The app builds into `app/dist/`; deployment uploads only that folder. Verification reports go to the ignored `app/artifacts/` directory.

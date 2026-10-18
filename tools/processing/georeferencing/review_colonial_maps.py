@@ -33,9 +33,9 @@ def main():
         b=m['web']['geographic_bounds'];choices.append(dict(id=ident,title=m['title'],bounds=[[b[1],b[0]],[b[3],b[2]]],rmse=round(m['diagnostic']['check']['rmse_m']/1000,1),credit=m['source']['institution'],rights=m['source']['rights']))
     # Diagnostic viewer stays in ignored deliverables; main application is unchanged until WMS publishing succeeds.
     html='''<!doctype html><html lang="en"><meta charset="utf-8"><title>Colonial map alignment review</title>
-<link rel="stylesheet" href="../apps/viewer/public/preview/leaflet.css"><style>body{margin:0;font:15px system-ui}header{padding:10px}#map{height:78vh}label,button{margin-right:12px}p{margin:8px 0}</style>
+<link rel="stylesheet" href="../app/public/preview/leaflet.css"><style>body{margin:0;font:15px system-ui}header{padding:10px}#map{height:78vh}label,button{margin-right:12px}p{margin:8px 0}</style>
 <header><strong>Colonial map alignment review — local raster previews</strong><p>NOTICE</p><label>Map <select id="layers"></select></label><label>Opacity <input id="opacity" type="range" min="0" max="100" value="55"></label><button id="fit">Fit</button><label><input id="show" type="checkbox" checked> Show</label><span id="diagnostic"></span><p id="credit"></p></header><div id="map"></div>
-<script src="../apps/viewer/public/preview/leaflet.js"></script><script>
+<script src="../app/public/preview/leaflet.js"></script><script>
 const maps=CONFIG;const map=L.map('map');L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,attribution:'USGS The National Map and contributors'}).addTo(map);
 const select=document.getElementById('layers'),opacity=document.getElementById('opacity'),show=document.getElementById('show');let overlay;
 for(const m of maps){const o=document.createElement('option');o.value=m.id;o.textContent=m.title;select.append(o)}

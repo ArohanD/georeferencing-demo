@@ -4,35 +4,35 @@ A monorepo for historical-map applications, shared geospatial data, processing t
 
 | Directory | Contents |
 | --- | --- |
-| [apps/viewer/](apps/viewer/) | Static Leaflet app, app build script, and browser tests |
+| [app/](app/) | Static Leaflet app, app build script, and browser tests |
 | [tools/processing/](tools/processing/) | Python raster processing, source downloads, GeoServer publishing, and verification |
 | [data/](data/) | Shared source metadata, frozen control points, reference images, and map manifests |
 | [research/](research/) | Point-review page, historical research reports, and platform evaluations |
 | [docs/](docs/) | Integration notes and recorded service/app validation |
 | [outputs/](outputs/) | Original Collet pilot results and review images; large rasters and scratch previews are ignored |
 | `deliverables/` | Ignored local scans, generated multi-map rasters, previews, and publication receipts |
-| `apps/viewer/dist/` | Ignored viewer build, generated from app-owned assets only |
+| `app/dist/` | Ignored viewer build, generated from app-owned assets only |
 
-New applications belong under `apps/<name>/` with their own assets, scripts, and README. Shared data stays outside app folders. Paths stored in processing manifests are relative to the repository root; existing data and raster locations are preserved.
+The frontend lives in `app/`, alongside shared data, processing tools, and research. Paths stored in processing manifests are relative to the repository root; existing data and raster locations are preserved.
 
 ## Run the viewer
 
 From the repository root:
 
 ```bash
-python3 -m http.server 8000 --bind 127.0.0.1 --directory apps/viewer/public
+python3 -m http.server 8000 --bind 127.0.0.1 --directory app/public
 ```
 
-Open http://localhost:8000/ . Live map services require internet. See [viewer usage and browser tests](apps/viewer/README.md).
+Open http://localhost:8000/ . Live map services require internet. See [viewer usage and browser tests](app/README.md).
 
 ## Build and check
 
 ```bash
-python3 apps/viewer/scripts/package_demo.py
+python3 app/scripts/package_demo.py
 python3 tools/check_layout.py
 ```
 
-Deploy only `apps/viewer/dist/`. Its existing root redirect and `/preview/` URL are preserved. Building does not publish anything. See [viewer publishing](apps/viewer/deployment/README.md) for the GitHub Pages workflow and one-time setup.
+Deploy only `app/dist/`. Its existing root redirect and `/preview/` URL are preserved. Building does not publish anything. See [viewer publishing](app/deployment/README.md) for the GitHub Pages workflow and one-time setup.
 
 ## Processing and research
 

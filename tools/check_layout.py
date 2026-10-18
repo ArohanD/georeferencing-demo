@@ -8,8 +8,8 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC = ROOT / 'apps/viewer/public'
-PACKAGE = ROOT / 'apps/viewer/dist'
+PUBLIC = ROOT / 'app/public'
+PACKAGE = ROOT / 'app/dist'
 
 
 class Links(HTMLParser):
@@ -37,7 +37,7 @@ def main():
         parser.feed(page.read_text())
         for link in parser.links:
             check_link(page, link)
-    markdown = [ROOT/'README.md', *ROOT.joinpath('apps').rglob('*.md'),
+    markdown = [ROOT/'README.md', *ROOT.joinpath('app').rglob('*.md'),
                 *ROOT.joinpath('tools').rglob('*.md'), *ROOT.joinpath('research').rglob('*.md'),
                 *ROOT.joinpath('docs').rglob('*.md'), *ROOT.joinpath('data').rglob('*.md')]
     for page in markdown:
@@ -45,7 +45,7 @@ def main():
             check_link(page, link)
     # Check static root assignments without importing scripts that process or publish data.
     roots = 0
-    for parent in (ROOT/'apps', ROOT/'tools'):
+    for parent in (ROOT/'app', ROOT/'tools'):
         for script in parent.rglob('*.py'):
             tree = ast.parse(script.read_text(), filename=str(script))
             for node in ast.walk(tree):

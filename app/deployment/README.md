@@ -2,7 +2,7 @@
 
 The monorepo is on branch `app` in `ArohanD/georeferencing-demo`. Its existing `main` branch contains the old published demo. Publishing uses the monorepo directly; no second checkout or generated-files branch is needed.
 
-The workflow lives at [`.github/workflows/deploy-viewer.yml`](../../../.github/workflows/deploy-viewer.yml), the location GitHub requires. It runs the app-owned build script and uploads **only `apps/viewer/dist/`**. Shared data, research, tools, and local artifacts are excluded from the deployment.
+The workflow lives at [`.github/workflows/deploy-viewer.yml`](../../.github/workflows/deploy-viewer.yml), the location GitHub requires. It runs the app-owned build script and uploads **only `app/dist/`**. Shared data, research, tools, and local artifacts are excluded from the deployment.
 
 ## One-time GitHub setup
 
@@ -22,9 +22,9 @@ The workflow deploys on pushes to `app` that change the app folder or workflow. 
 From the repository root:
 
 ```bash
-python3 apps/viewer/scripts/package_demo.py
+python3 app/scripts/package_demo.py
 python3 tools/check_layout.py
-python3 -m http.server 8001 --bind 127.0.0.1 --directory apps/viewer/dist
+python3 -m http.server 8001 --bind 127.0.0.1 --directory app/dist
 ```
 
 Open http://localhost:8001/ . The `dist/` directory is ignored and can be regenerated. The build preserves the deployed URL structure and writes a checksummed `PUBLICATION-MANIFEST.json`. It does not push or publish.
@@ -32,10 +32,10 @@ Open http://localhost:8001/ . The `dist/` directory is ignored and can be regene
 After deployment, verify the public files against the same local build:
 
 ```bash
-.venv313/bin/python apps/viewer/scripts/verify_public.py
+.venv313/bin/python app/scripts/verify_public.py
 ```
 
-This check requires `requests` and internet access. Its output goes to `apps/viewer/artifacts/publication-verification.json`, which is ignored. `legacy-publication-verification.json` in this directory is evidence from the old demo, not verification of the current deployment.
+This check requires `requests` and internet access. Its output goes to `app/artifacts/publication-verification.json`, which is ignored. `legacy-publication-verification.json` in this directory is evidence from the old demo, not verification of the current deployment.
 
 Older integration documents and JSON validation records may mention `publish/` paths. Those describe historical runs. Current builds and publishing use the paths on this page.
 

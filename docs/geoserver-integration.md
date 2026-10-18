@@ -1,4 +1,4 @@
-> Historical integration record. For current serving, packaging, and verification commands, use [the viewer README](../apps/viewer/README.md). The former integration-branch offline controls and `publish/geoserver-demo/` package are not part of the current viewer.
+> Historical integration record. For current serving, packaging, and verification commands, use [the viewer README](../app/README.md). The former integration-branch offline controls and `publish/geoserver-demo/` package are not part of the current viewer.
 
 # GeoServer historical-map integration
 
@@ -11,12 +11,12 @@ The plain HTML/JavaScript application retains Leaflet 1.9.4. There is no package
 From the repository root:
 
 ```bash
-python3 -m http.server 8000 --bind 127.0.0.1 --directory apps/viewer/public
+python3 -m http.server 8000 --bind 127.0.0.1 --directory app/public
 ```
 
 Open http://localhost:8000/preview/ . The default live layers need internet. Choose **Collet 1770 · local pilot overlay** and **USGS · local reference** for offline comparison. Local reference imagery covers only the selected view. The proxy points refer to Collet, not Moseley.
 
-`apps/viewer/public/preview/map-config.js` centralizes the HTTPS WMS endpoint, exact layer names, WMS version, format, bounds, attribution, publication flags, basemap and loading timeout. There are **no application environment variables** or secrets. `data/points/preview.json` retains the original local-view/proxy data. Bounds and historical credits were copied from `data/historical_maps/integration-manifest.json`; that older processing manifest's pending publication fields are not the live service authority.
+`app/public/preview/map-config.js` centralizes the HTTPS WMS endpoint, exact layer names, WMS version, format, bounds, attribution, publication flags, basemap and loading timeout. There are **no application environment variables** or secrets. `data/points/preview.json` retains the original local-view/proxy data. Bounds and historical credits were copied from `data/historical_maps/integration-manifest.json`; that older processing manifest's pending publication fields are not the live service authority.
 
 The viewer uses `L.tileLayer.wms`, WMS 1.1.1, EPSG:3857, PNG with transparency and an empty styles parameter (server default). Leaflet generates new meter-based BBOX requests on pan/zoom. Both basemap and historical layers use Web Mercator. Raster-envelope bounds include transparent margins; they are not surveyed boundaries. Initial view fits Collet's full bounds. Visibility, opacity, fit and retry controls do not require a page reload.
 
@@ -45,8 +45,8 @@ No browser verification was performed from a deployed HTTPS application origin; 
 Syntax and existing raster/local-asset verification:
 
 ```bash
-node --check apps/viewer/public/preview/app.js
-node --check apps/viewer/public/preview/map-config.js
+node --check app/public/preview/app.js
+node --check app/public/preview/map-config.js
 .venv313/bin/python tools/processing/verify.py
 ```
 
@@ -55,7 +55,7 @@ The existing audit checks provenance, numeric diagnostics, COG validity and loca
 ```bash
 npm install --prefix /tmp/georef-browser --no-audit --no-fund playwright
 PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers /tmp/georef-browser/node_modules/.bin/playwright install chromium
-NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node apps/viewer/scripts/test_viewer.cjs
+NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node app/scripts/test_viewer.cjs
 ```
 
 Keep the localhost server running. The test checks real PNG tile responses, visibility, opacity, new zoom/pan requests, all local views, point controls, attribution, disabled Moseley, missing local data, simulated server failure, retry, loading timeout and mobile width. Screenshots and a JSON result are written to `/tmp/georef-validation`. Optional positional arguments set the viewer URL and evidence output directory. The two shell variables above configure the test tools only.
@@ -67,7 +67,7 @@ The existing GitHub `main` history contains a static display package, including 
 Build with the existing allowlisted packager, now targeting a separate ignored directory:
 
 ```bash
-python3 apps/viewer/scripts/package_demo.py
+python3 app/scripts/package_demo.py
 python3 -m http.server 8001 --bind 127.0.0.1 --directory publish/geoserver-demo
 ```
 
@@ -76,10 +76,10 @@ Open http://localhost:8001/ . The package includes the new configuration, live v
 To test the generated package while the repository-root server is running:
 
 ```bash
-NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node apps/viewer/scripts/test_viewer.cjs http://127.0.0.1:8000/publish/geoserver-demo/preview/ /tmp/georef-package-validation
+NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-browser/browsers node app/scripts/test_viewer.cjs http://127.0.0.1:8000/publish/geoserver-demo/preview/ /tmp/georef-package-validation
 ```
 
-**Next deployment step:** review the branch changes and the generated package, then obtain authorization to publish. Deploy only the contents of `publish/geoserver-demo/` to the static hosting root/project subpath. If continuing with GitHub Pages, first confirm its configured publishing branch/folder or workflow in repository Settings → Pages, and deliver this artifact to that destination. No push, commit, hosting change or deployment was performed here. `apps/viewer/scripts/verify_public.py` compares the public site with this new artifact and should run only after an authorized deployment; it is not a local build test.
+**Next deployment step:** review the branch changes and the generated package, then obtain authorization to publish. Deploy only the contents of `publish/geoserver-demo/` to the static hosting root/project subpath. If continuing with GitHub Pages, first confirm its configured publishing branch/folder or workflow in repository Settings → Pages, and deliver this artifact to that destination. No push, commit, hosting change or deployment was performed here. `app/scripts/verify_public.py` compares the public site with this new artifact and should run only after an authorized deployment; it is not a local build test.
 
 A host with a restrictive Content-Security-Policy must permit images from the GeoServer HTTPS origin and `https://tile.openstreetmap.org`, plus the bundled local assets. Keep HTTPS certificate validation enabled. Recheck imagery from the deployed origin, since localhost verification cannot certify a future hosting policy or future VCL availability. No IIS, firewall, GeoServer security or PostgreSQL changes were needed for Collet.
 
@@ -91,6 +91,6 @@ Only the administrator should perform these steps; no server configuration was c
 2. Point it to `file:///C:/GIS590_adutt2/Data/HistoricalMaps/moseley_1733-approximate-web.cog.tif`. Confirm the file exists and the GeoServer service account can read it. Save the store.
 3. Click **Publish** for its coverage. Set the layer name to `moseley_1733`. Confirm native and declared CRS are EPSG:3857 for this web raster. Do not label meter coordinates EPSG:4326. Compute native bounds from the data and geographic bounds from the native bounds. Enable and advertise the layer, use the default raster style, and save.
 4. Check the workspace GetCapabilities and Layer Preview. Verify a transparent PNG GetMap with `layers=history:moseley_1733`, `srs=EPSG:3857`, WMS 1.1.1 and bounds approximately `-8963241.943041157,3857757.7715218626,-8325116.943041157,4396007.771521863`. Check actual imagery, not just HTTP 200.
-5. After verification, set Moseley's `available` to `true` in `apps/viewer/public/preview/map-config.js`, change its label to `Moseley 1733 · live GeoServer`, update `checkedOn`, and rerun imagery/browser checks and the static build. Keep its accuracy disclaimer and ECU attribution.
+5. After verification, set Moseley's `available` to `true` in `app/public/preview/map-config.js`, change its label to `Moseley 1733 · live GeoServer`, update `checkedOn`, and rerun imagery/browser checks and the static build. Keep its accuracy disclaimer and ECU attribution.
 
 The store/coverage workflow is documented in GeoServer's [GeoTIFF publishing guide](https://docs.geoserver.org/main/en/user/gettingstarted/image-quickstart/); CRS, bounding-box and enabled/advertised options are described in its [Layers documentation](https://docs.geoserver.org/stable/en/user/data/webadmin/layers/).

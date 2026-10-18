@@ -4,7 +4,7 @@ These outputs are for review before GeoServer publication. Read each map's QA re
 
 ## Environment and repository inspection
 
-Workspace: `/home/arohan/code/georef` on WSL's Linux filesystem, not `/mnt/c`. Heavy work and final ignored outputs are under `/home/arohan/code/georef/deliverables/`. The existing project is a standalone Python raster-processing pilot and a plain HTML/JavaScript Leaflet 1.9.4 viewer (`apps/viewer/public/`), with no package.json or application framework found. Historical configuration is `data/points/preview.json` plus `apps/viewer/public/preview/app.js`: pre-rendered image overlays, view bounds and eight fitted/four held-out town proxies. Those are not ground truth. Existing Collet scan, point snapshots and pilot outputs were preserved; scripts under `tools/processing/georeferencing/` create new outputs.
+Workspace: `/home/arohan/code/georef` on WSL's Linux filesystem, not `/mnt/c`. Heavy work and final ignored outputs are under `/home/arohan/code/georef/deliverables/`. The existing project is a standalone Python raster-processing pilot and a plain HTML/JavaScript Leaflet 1.9.4 viewer (`app/public/`), with no package.json or application framework found. Historical configuration is `data/points/preview.json` plus `app/public/preview/app.js`: pre-rendered image overlays, view bounds and eight fitted/four held-out town proxies. Those are not ground truth. Existing Collet scan, point snapshots and pilot outputs were preserved; scripts under `tools/processing/georeferencing/` create new outputs.
 
 The original processing run occurred in a mounted environment without usable Git metadata. The current repository is organized as a monorepo; see the root README for current paths. Original scans and generated rasters remain ignored.
 

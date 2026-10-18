@@ -4,9 +4,9 @@ import json
 import shutil
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
-SOURCE = ROOT / 'apps/viewer/public'
-DEST = ROOT / 'apps/viewer/dist'
+ROOT = Path(__file__).resolve().parents[2]
+SOURCE = ROOT / 'app/public'
+DEST = ROOT / 'app/dist'
 FILES = ['index.html', '.nojekyll', 'preview/index.html', 'preview/app.js',
          'preview/map-config.js', 'preview/terrain-layer.js', 'preview/leaflet.js', 'preview/leaflet.css',
          'preview/LEAFLET-LICENSE']

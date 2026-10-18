@@ -9,7 +9,7 @@
     "library": "Leaflet 1.9.4",
     "framework": "plain HTML/JavaScript",
     "current_config": "data/points/preview.json",
-    "current_layer_code": "apps/viewer/public/preview/app.js",
+    "current_layer_code": "app/public/preview/app.js",
     "changed": false
   },
   "accuracy_disclaimer": "Rectification does not establish accuracy of historical routes or locations. Read individual status and checkpoint evidence.",

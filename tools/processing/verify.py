@@ -33,7 +33,7 @@ class Links(HTMLParser):
  def __init__(self):super().__init__();self.links=[]
  def handle_starttag(self,tag,attrs):
   self.links.extend(v for k,v in attrs if k in ['src','href'])
-for page in [R/'apps/viewer/public/preview/index.html', R/'research/review.html']:
+for page in [R/'app/public/preview/index.html', R/'research/review.html']:
  parser=Links();parser.feed(page.read_text())
  for link in parser.links:
   if not link.startswith(('https:','http:','#')):assert (page.parent/link).exists(),link
@@ -42,7 +42,7 @@ for v in d['views']:
  for p in [R/'data/reference'/(v['name']+'-modern.jpg'),O/(v['name']+'-overlay.png')]:
   with Image.open(p) as im:im.verify()
  assert (O/(v['name']+'-comparison.png')).is_file()
-try:subprocess.run(['node','--check',str(R/'apps/viewer/public/preview/app.js')],check=True,capture_output=True)
+try:subprocess.run(['node','--check',str(R/'app/public/preview/app.js')],check=True,capture_output=True)
 except FileNotFoundError:print('Node unavailable: JS syntax check skipped.')
 result={'input_files_checked':len(manifest),'fitting_count':8,'checking_count':4,'numeric_errors_recomputed':True,'cog_strict_validation':'passed','alpha_crs_resolution_overviews':'passed','preview_local_links_and_images':'passed','interactive_browser_test':'not run; no browser engine installed'}
 (O/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
