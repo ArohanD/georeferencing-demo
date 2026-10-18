@@ -1,0 +1,13 @@
+point_id,pixel,line,coordinate_axis,printed_degrees,status,evidence,confidence
+L01,2047,336,longitude,-83,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+L02,4079,321,longitude,-82,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+L03,14300,299,longitude,-77,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+L04,16330,300,longitude,-76,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+L05,2167,12138,longitude,-83,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+L06,4185,12120,longitude,-82,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+L07,14334,12068,longitude,-77,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+L08,16350,12054,longitude,-76,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+B01,250,644,latitude,36.5,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+B02,16780,565,latitude,36.5,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+B03,365,11886,latitude,32,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation
+B04,16790,11789,latitude,32,initial_placement_only,"Original LOC image border tick, visually inspected crops; London zero assumed Greenwich",high tick identification; low geodetic interpretation

@@ -1,0 +1,58 @@
+{
+  "year": 1747,
+  "short_title": "Bowen 1747 coastal NC excerpt",
+  "title": "New and accurate map of the provinces of North and South Carolina, Georgia etc. ...",
+  "creators": [
+    "Emanuel Bowen"
+  ],
+  "publication": "London: W. Innys, 1747; A complete system of Geography, map no.76; Hargrett guan_hmap_hmap1747b6",
+  "institution": "Hargrett Rare Book and Manuscript Library, University of Georgia Libraries / Digital Library of Georgia",
+  "item_url": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6",
+  "resource_url": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6#item",
+  "rights": "No Copyright \u2014 United States (NoC-US), as supplied by the holding institution.",
+  "rights_url": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "mask_polygon": [
+    [
+      3150,
+      800
+    ],
+    [
+      4580,
+      800
+    ],
+    [
+      4580,
+      2070
+    ],
+    [
+      3150,
+      2070
+    ]
+  ],
+  "resolution": 200,
+  "id": "bowen_1747",
+  "access_date": "2026-10-12",
+  "source_path": "deliverables/bowen_1747/source.jpg",
+  "source_sha256": "52f517631da24918afb24316db5e89eeab2cde7d5ad2171a943ac4940d6c49e7",
+  "source_dimensions": [
+    5000,
+    4352
+  ],
+  "download_url": "https://dlg.usg.edu/images/iiif/2/dlg%2Fguan%2Fhmap%2Fguan_hmap_hmap1747b6%2Fguan_hmap_hmap1747b6-00001.jp2/full/5000,/0/default.jpg",
+  "reference_crs": "EPSG:4269",
+  "reference_source": "USGS GNIS: frozen NC populated-place subset plus live landform query for three capes",
+  "reference_sha256": "fed4085cd6e973c3b0a34413fd421da643cfe3442b63f8e5f29526fc3e2267e4",
+  "cape_reference_sha256": "73e21b3ce02f374c6a40e9603e9142e5527982f788ca32d60fc369c8e5bc15a7",
+  "points_sha256": "88fcf3d184490f06a433aba53d12f5c864f41b134b6e559f15094ef1c3adfb32",
+  "method": "Unweighted six-parameter affine in EPSG:32119, fit to five town proxies. Three cape checks and all source-pixel selections frozen before fitting. No checkpoint tuning.",
+  "limitations": [
+    "Approximate coastal comparison only; no precise route, crossing or site identification.",
+    "Modern town centers do not establish exact colonial town locations.",
+    "Cape checks include unknown shoreline migration and point-definition uncertainty.",
+    "Sparse, predominantly coastal controls; interior/extrapolated geography is unvalidated.",
+    "Bowen serving raster is a coastal NC excerpt; full source scan remains available separately.",
+    "Historical source wording and depictions are retained as historical material."
+  ],
+  "mask": "Source-pixel polygon explicitly recorded below; excludes decorative/non-geographic material for Wimble and restricts Bowen to coastal NC.",
+  "source_derivative": "Institutional IIIF JPEG; native resolution for Wimble, 5000-pixel-wide derivative for Bowen."
+}

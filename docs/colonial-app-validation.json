@@ -1,0 +1,17 @@
+{
+  "base": "http://127.0.0.1:8000/publish/app-lidar/preview/",
+  "checkedAt": "2026-10-12T23:32:59.416Z",
+  "tests": [
+    "live Collet PNG imagery, OSM, credits, disclaimer, unavailable Moseley",
+    "visibility and opacity retain the basemap",
+    "zoom and drag issue new WMS BBOX requests; fit returns to historical extent",
+    "live USGS imagery and attribution, no basemap, OSM switching, no proof-of-concept controls",
+    "live Wimble and Bowen imagery, attribution/rights, diagnostics, opacity, visibility, zoom and fit",
+    "no TLS/mixed-content/auth-redirect/CORS/request/JavaScript errors in live browser run",
+    "server outage preserves basemap and visibility controls; retry recovers",
+    "loading timeout and removal cancel stale status updates",
+    "mobile width has no horizontal overflow"
+  ],
+  "cancelledImageRequests": 8,
+  "liveWmsResponses": 166
+}

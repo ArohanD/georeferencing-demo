@@ -1,0 +1,120 @@
+{
+  "id": "mouzon_1775",
+  "technical_checks_passed": true,
+  "rasters": {
+    "master": {
+      "path": "deliverables/mouzon_1775/mouzon_1775-approximate-master.tif",
+      "bytes": 595180497,
+      "sha256": "9f3190ec90a265ef098bc7e5e3b2ffce8ace794a983e2d63525ba2d19be5f80c",
+      "crs": "EPSG:4326",
+      "dimensions": [
+        17109,
+        12467
+      ],
+      "bounds": [
+        -84.05184284029953,
+        31.729581838094685,
+        -75.60643624095506,
+        36.76036804376343
+      ],
+      "geographic_bounds": [
+        -84.05184284029953,
+        31.729581838094685,
+        -75.60643624095506,
+        36.76036804376343
+      ],
+      "resolution": [
+        0.000491497943190864,
+        0.0004006038541342111
+      ],
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "bands": 4,
+      "color_interpretation": [
+        "red",
+        "green",
+        "blue",
+        "alpha"
+      ],
+      "compression": "Compression.deflate",
+      "cog_valid": true,
+      "errors": [],
+      "warnings": [],
+      "sampled_rgb_range": [
+        0,
+        249
+      ],
+      "sampled_alpha_nonzero_fraction": 0.8363037109375
+    },
+    "web": {
+      "path": "deliverables/mouzon_1775/mouzon_1775-approximate-3857.tif",
+      "bytes": 151768059,
+      "sha256": "c06e3d5eba5f1c4543440bf1b233f753c0203b70bd635c448d4a59ed2ceef9a3",
+      "crs": "EPSG:3857",
+      "dimensions": [
+        9402,
+        6779
+      ],
+      "bounds": [
+        -9356608.3452184,
+        3727857.610454685,
+        -8416408.3452184,
+        4405757.610454685
+      ],
+      "geographic_bounds": [
+        -84.05184284029951,
+        31.729516588996074,
+        -75.60588253900778,
+        36.760368043763414
+      ],
+      "resolution": [
+        100.0,
+        100.0
+      ],
+      "overviews": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "bands": 4,
+      "color_interpretation": [
+        "red",
+        "green",
+        "blue",
+        "alpha"
+      ],
+      "compression": "Compression.deflate",
+      "cog_valid": true,
+      "errors": [],
+      "warnings": [],
+      "sampled_rgb_range": [
+        0,
+        250
+      ],
+      "sampled_alpha_nonzero_fraction": 0.83184814453125
+    }
+  },
+  "reprojection_fidelity": {
+    "comparison_crs": "EPSG:5070",
+    "grid": [
+      1000,
+      800
+    ],
+    "valid_samples": 474658,
+    "mean_absolute_rgb_difference_0_255": 0.305200797205567,
+    "p95_absolute_rgb_difference": 1.0,
+    "alpha_mask_intersection_over_union": 0.9998772168599981,
+    "meaning": "Master-versus-web reprojection fidelity only, NOT modern positional validation"
+  },
+  "georeferencing_status": "approximate only",
+  "geographic_accuracy_certified": false,
+  "caution": "Passing COG, bounds, alpha and reprojection checks does not validate historical positions. See point evidence and independent checkpoint results in QA."
+}

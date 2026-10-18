@@ -1,0 +1,35 @@
+{
+  "map_title": "A New and Correct Map of the Province of North Carolina",
+  "creator": "Edward Moseley",
+  "original_map_date": 1733,
+  "digital_reproduction_date": null,
+  "digital_reproduction_note": "ECU digitization date not specified in item catalog. This is a scan of the original print, not the distinct 1737 Cowley map or its 2008 reproduction.",
+  "catalog_url": "https://digital.lib.ecu.edu/62315",
+  "finding_aid_url": "https://digital.lib.ecu.edu/special/ead/findingaids/MC0017",
+  "discovery_chain": [
+    "https://digital.lib.ecu.edu/special/ead/findingaids/MC0017",
+    "https://digital.lib.ecu.edu/1028",
+    "https://digital.lib.ecu.edu/62315"
+  ],
+  "older_scan_considered": "https://digital.lib.ecu.edu/51135 (10000 x 7961; six scan mosaic)",
+  "iiif_info_url": "https://iiif.lib.ecu.edu/cantaloupe/iiif/2/00062315_0001.jp2/info.json",
+  "download_url": "https://iiif.lib.ecu.edu/cantaloupe/iiif/2/00062315_0001.jp2/full/10000,/0/default.jpg",
+  "native_dimensions": [
+    15000,
+    11876
+  ],
+  "downloaded_dimensions": [
+    10000,
+    7918
+  ],
+  "resolution_decision": "Native full/full JPEG endpoint returned HTTP 504 twice. 10000-wide image succeeded; all image areas preserved at highest practical successful resolution. Source JPEG is institutional compression; downstream COG compression is lossless.",
+  "download_bytes": 13618523,
+  "sha256": "631fdab964343cb2a2cac0f41231137e85abc2cd13bbe7d9c768f60f97f53b5d",
+  "institution": "East Carolina University, J. Y. Joyner Library, East Carolina Manuscript Collection",
+  "local_identifier": "MC0017",
+  "attribution": "A New and Correct Map of the Province of North Carolina (Moseley Map) (#MC0017), East Carolina Manuscript Collection, J. Y. Joyner Library, East Carolina University, Greenville, North Carolina, USA.",
+  "rights_statement": "Finding aid: Access: No restrictions. Copyright notice says literary rights to specific documents are retained by authors or descendants in accordance with US copyright law. Item page has a general ECU website copyright footer but no item-specific reuse license located; retain institutional attribution. No inference of a specific digital-image license.",
+  "edition_verification": "Cartouche visibly reads Edward Moseley and 1733; preserved title crop. Inset titles include Port Brunswick/Cape Fear, Port Beaufort/Topsail, Ocacock. Distinct MC0035 1737/2008 record excluded.",
+  "physical_condition": "Visible panel/scan seams, folds and discoloration across image; lower inset strip excluded conservatively. No seam correction or label restoration.",
+  "access_date": "2026-10-07"
+}

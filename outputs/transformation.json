@@ -52,5 +52,12 @@
   ],
   "anisotropy_ratio": 1.1639461397489383,
   "jacobian_determinant": -2258.4991585599037,
-  "note": "Negative determinant expected because image y points down; affine has constant Jacobian and no local folding. Outside fit hull is extrapolation. Check errors include GNIS and symbol ambiguity. No polynomial/TPS fitted: insufficient exact controls, uneven coverage, no independent southern/western edge checks."
+  "note": "Negative determinant expected because image y points down; affine has constant Jacobian and no local folding. Outside fit hull is extrapolation. Check errors include GNIS and symbol ambiguity. No polynomial/TPS fitted: insufficient exact controls, uneven coverage, no independent southern/western edge checks.",
+  "runtime": {
+    "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [GCC 11.4.0]",
+    "platform": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "rasterio": "1.5.1",
+    "GDAL_bundled": "3.12.4",
+    "PROJ_pyproj": "3.8.0"
+  }
 }

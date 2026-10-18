@@ -1,0 +1,139 @@
+{
+  "url": "https://carto.nationalmap.gov/arcgis/rest/services/geonames/MapServer/5/query?f=json&where=gaz_name+IN+%28%27Cape+Hatteras%27%2C%27Cape+Lookout%27%2C%27Cape+Fear%27%29+AND+state_alpha+%3D+%27NC%27&outFields=%2A&outSR=4269&returnGeometry=true",
+  "access_date": "2026-10-12",
+  "response": {
+    "displayFieldName": "gaz_name",
+    "fieldAliases": {
+      "OBJECTID": "OBJECTID",
+      "gaz_id": "gaz_id",
+      "gaz_name": "gaz_name",
+      "gaz_featureclass": "gaz_featureclass",
+      "fcode": "fcode",
+      "state_alpha": "state_alpha",
+      "county_name": "county_name",
+      "objectid_1": "objectid_1",
+      "isunknowncoords": "isunknowncoords"
+    },
+    "geometryType": "esriGeometryMultipoint",
+    "spatialReference": {
+      "wkid": 4269,
+      "latestWkid": 4269
+    },
+    "fields": [
+      {
+        "name": "OBJECTID",
+        "type": "esriFieldTypeOID",
+        "alias": "OBJECTID"
+      },
+      {
+        "name": "gaz_id",
+        "type": "esriFieldTypeInteger",
+        "alias": "gaz_id"
+      },
+      {
+        "name": "gaz_name",
+        "type": "esriFieldTypeString",
+        "alias": "gaz_name",
+        "length": 120
+      },
+      {
+        "name": "gaz_featureclass",
+        "type": "esriFieldTypeString",
+        "alias": "gaz_featureclass",
+        "length": 50
+      },
+      {
+        "name": "fcode",
+        "type": "esriFieldTypeInteger",
+        "alias": "fcode"
+      },
+      {
+        "name": "state_alpha",
+        "type": "esriFieldTypeString",
+        "alias": "state_alpha",
+        "length": 1073741822
+      },
+      {
+        "name": "county_name",
+        "type": "esriFieldTypeString",
+        "alias": "county_name",
+        "length": 100
+      },
+      {
+        "name": "objectid_1",
+        "type": "esriFieldTypeInteger",
+        "alias": "objectid_1"
+      },
+      {
+        "name": "isunknowncoords",
+        "type": "esriFieldTypeInteger",
+        "alias": "isunknowncoords"
+      }
+    ],
+    "features": [
+      {
+        "attributes": {
+          "OBJECTID": 25447,
+          "gaz_id": 982627,
+          "gaz_name": "Cape Hatteras",
+          "gaz_featureclass": "Cape",
+          "fcode": 15018,
+          "state_alpha": "NC",
+          "county_name": "Dare",
+          "objectid_1": 912070,
+          "isunknowncoords": 2
+        },
+        "geometry": {
+          "points": [
+            [
+              -75.53015089979122,
+              35.22462199875627
+            ]
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 55784,
+          "gaz_id": 982615,
+          "gaz_name": "Cape Fear",
+          "gaz_featureclass": "Cape",
+          "fcode": 15018,
+          "state_alpha": "NC",
+          "county_name": "Brunswick",
+          "objectid_1": 889300,
+          "isunknowncoords": 2
+        },
+        "geometry": {
+          "points": [
+            [
+              -77.96026520020007,
+              33.84045329981333
+            ]
+          ]
+        }
+      },
+      {
+        "attributes": {
+          "OBJECTID": 116871,
+          "gaz_id": 1019523,
+          "gaz_name": "Cape Lookout",
+          "gaz_featureclass": "Cape",
+          "fcode": 15018,
+          "state_alpha": "NC",
+          "county_name": "Carteret",
+          "objectid_1": 889299,
+          "isunknowncoords": 2
+        },
+        "geometry": {
+          "points": [
+            [
+              -76.53770090039586,
+              34.59822020007074
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

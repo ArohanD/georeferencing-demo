@@ -1,0 +1,7 @@
+# Preserve checksum-sensitive data bytes even with core.autocrlf enabled.
+data/** -text
+# CSV writers use CRLF; it is part of the preserved data format.
+data/**/*.csv whitespace=cr-at-eol
+# Institutional source snapshots retain their original formatting.
+data/historical_maps/moseley_1733/catalog.html -whitespace
+data/metadata/gnis-populated.xml -whitespace

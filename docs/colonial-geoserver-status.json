@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-12T23:33:48.526393+00:00",
+  "base_url": "https://vclvm176-164.vclgis.cnr.ncsu.edu/geoserver",
+  "tls_validation": true,
+  "anonymous_rest_status": 401,
+  "capabilities_status": 200,
+  "new_layers_uploaded": true,
+  "published_names": [
+    "spearfish",
+    "tasmania",
+    "tiger-ny",
+    "bowen_1747",
+    "collet_1770",
+    "wimble_1738"
+  ],
+  "previous_rest_check_at": "2026-10-12T21:51:41.868094+00:00",
+  "app_integration": "Enabled in apps/viewer/public/preview/map-config.js; packaged viewer live-browser tests passed"
+}

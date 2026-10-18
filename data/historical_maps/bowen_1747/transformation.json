@@ -1,0 +1,108 @@
+{
+  "method": "Unweighted six-parameter affine in EPSG:32119, fit to five town proxies. Three cape checks and all source-pixel selections frozen before fitting. No checkpoint tuning.",
+  "coefficients_to_EPSG32119": [
+    [
+      331.41361504568226,
+      -21.806331082413422
+    ],
+    [
+      -5.629723554275531,
+      -262.2080165388465
+    ],
+    [
+      -518299.2649539934,
+      617306.1695741903
+    ]
+  ],
+  "statistics": {
+    "fit": {
+      "n": 5,
+      "rmse_m": 6179.802758214421,
+      "max_m": 11112.789502213662
+    },
+    "check": {
+      "n": 3,
+      "rmse_m": 13897.299992123591,
+      "max_m": 21159.085227800082
+    }
+  },
+  "residuals": [
+    {
+      "id": "P01",
+      "name": "Edenton",
+      "role": "fit",
+      "dx_m": 951.3029631815152,
+      "dy_m": -1019.8628253499046,
+      "error_m": 1394.667526792182
+    },
+    {
+      "id": "P02",
+      "name": "Bath",
+      "role": "fit",
+      "dx_m": 6893.293473151163,
+      "dy_m": -304.41853599395836,
+      "error_m": 6900.0119965145805
+    },
+    {
+      "id": "P03",
+      "name": "New Bern",
+      "role": "fit",
+      "dx_m": -10814.555693406845,
+      "dy_m": 2557.2398547480407,
+      "error_m": 11112.789502213662
+    },
+    {
+      "id": "P04",
+      "name": "Beaufort",
+      "role": "fit",
+      "dx_m": -999.9412918488961,
+      "dy_m": -180.37674120470183,
+      "error_m": 1016.0798964215694
+    },
+    {
+      "id": "P05",
+      "name": "Wilmington",
+      "role": "fit",
+      "dx_m": 3969.900548925041,
+      "dy_m": -1052.5817521986319,
+      "error_m": 4107.071793068254
+    },
+    {
+      "id": "P06",
+      "name": "Cape Hatteras",
+      "role": "check",
+      "dx_m": 104.74757241888437,
+      "dy_m": -10725.027151001297,
+      "error_m": 10725.53865517451
+    },
+    {
+      "id": "P07",
+      "name": "Cape Lookout",
+      "role": "check",
+      "dx_m": 6993.973979726783,
+      "dy_m": -19969.757526024507,
+      "error_m": 21159.085227800082
+    },
+    {
+      "id": "P08",
+      "name": "Cape Fear",
+      "role": "check",
+      "dx_m": 4049.074417903321,
+      "dy_m": -515.5292916660146,
+      "error_m": 4081.7611508128175
+    }
+  ],
+  "master_pixel_size_m": 200,
+  "web_pixel_size_map_units": 200,
+  "pixel_size_is_not_accuracy": true,
+  "point_selection_uncertainty_pixels": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ]
+}

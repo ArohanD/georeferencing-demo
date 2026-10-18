@@ -1,0 +1,36 @@
+{
+  "coefficients_to_EPSG32119": [
+    [
+      51.032239863271144,
+      0.4137138316730142
+    ],
+    [
+      2.8483936542678396,
+      -44.23322873452237
+    ],
+    [
+      263023.05587587587,
+      369309.1497870068
+    ]
+  ],
+  "statistics": {
+    "fit": {
+      "n": 8,
+      "rmse_m": 6844.778342975569,
+      "min_m": 1918.951462835383,
+      "max_m": 13731.661767389123
+    },
+    "check": {
+      "n": 4,
+      "rmse_m": 8023.091485276809,
+      "min_m": 1339.624308142537,
+      "max_m": 13077.54133510193
+    }
+  },
+  "method": "legacy unweighted affine; frozen proxy split; no tuning",
+  "master_resolution_m": 100,
+  "web_resolution_map_units": 125,
+  "source_reduction": "13949x9524 to 6975x4762 Lanczos; bilinear warp; average overviews",
+  "mask": "data/points/mask.json",
+  "pixel_size_is_not_accuracy": true
+}

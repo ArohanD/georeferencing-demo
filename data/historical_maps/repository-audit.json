@@ -1,0 +1,15 @@
+{
+  "review_index_links_checked": 108,
+  "missing_links": [],
+  "new_code_metadata_files_over_5MB": [],
+  "application_files_modified": false,
+  "git_status": "unavailable: .git directory empty; git status reports not a git repository",
+  "ignore_rules_added": [
+    "/deliverables/",
+    "/data/original/",
+    "/data/reference/*.zip",
+    "*.tif",
+    "*.tiff",
+    "*.jp2"
+  ]
+}

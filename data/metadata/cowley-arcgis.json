@@ -1,0 +1,71 @@
+{
+  "id": "37cff25f29d84d57913e6eeb72743991",
+  "owner": "tbrock_wfu",
+  "ownerId": "e8ea60677b4b49888a754faf8d54ff5b",
+  "created": 1657662925000,
+  "modified": 1657663246000,
+  "guid": null,
+  "name": "1737_New_and_Corrected",
+  "title": "1737_New_and_Corrected",
+  "type": "Map Service",
+  "typeKeywords": [
+    "ArcGIS Server",
+    "Data",
+    "Map Service",
+    "Metadata",
+    "Service",
+    "WMTS",
+    "Hosted Service"
+  ],
+  "description": "<div><br /><\/div><div>Information from repository:<\/div><div><br /><\/div><div>Repository: State Archives of North Carolina<\/div><div>Title: A New and Correct Map of the Province of North Carolina drawn from the Original of Colo. Mosely's.<\/div><div>Date Published: 1737<\/div><div>Date Depicted: 1737<\/div><div>Creator - Individual: Cowley, John. Moseley, Edward, 1682-1749.<\/div><div>Caption Below title: &quot;Survey by J. Cowley, London. 1737.&quot;<\/div><div>Abstract: Color copy of a manuscript map. Shows cities and towns, roads, natural features including rivers, lakes, trees, swamps, shoals, and mountains, forts, &quot;Indian trading road&quot; mills, some counties, ferries, and churches.<\/div><div>Historical Note: Edward Moseley, Surveyor General of North Carolina, published in 1733 one of the first maps of North Carolina to accurately show the coastal regions of the colony and identify settlements in the interior. John Cowley was the engraver of the Moseley map, and this manuscript map appears to be a reduced version from it with identical place names and locations of geographical features. The map differs slightly from the Moseley map of which it is a copy: also shows a proposed settlement at the head of the Pee Dee River where the Yadkin and Uwharrie rivers join.<\/div><div>Bibliographic Note: This is a copy of an original map in the possession of Mike McNamara (167 W Landing, Williamsburg, VA). This online version is published with permission of the owner.<\/div><div><br /><\/div><div>Institution North Carolina Department of Cultural Resources<\/div><div>Sponsor North Carolina Maps is made possible by the Institute of Museum and Library Services under the provisions of the Library Services and Technology Act as administered by the State Library of North Carolina.;<\/div><div>Call Number MC.150.1737c;MARS Id 3.3.630<\/div><div>Copyright This item is presented courtesy of the State Archives of North Carolina, for research and educational purposes. Prior permission from the State Archives is required for any commercial use.<\/div>",
+  "tags": [
+    "CHARG",
+    "WFHM",
+    "Map",
+    "Georeference",
+    "North Carolina"
+  ],
+  "snippet": "This is a georeferenced copy of the map file acquired from the State Archives of North Carolina, located here: https://dc.lib.unc.edu/cdm/ref/collection/ncmaps/id/1245\n\nThe image was georeferenced by The Cultural Heritage and Archaeology Research Group (CHARG) for use in the Wake Forest Historical Museum's Exhibition \"You Are Here\".\n\n It was georeferenced by Jackson DeWitt, Wake Forest University.",
+  "thumbnail": "thumbnail/thumbnail.png",
+  "documentation": null,
+  "extent": [
+    [
+      -80.9248959000153,
+      32.8406230313619
+    ],
+    [
+      -74.4360619144832,
+      36.8923481805049
+    ]
+  ],
+  "categories": ["/Categories/Cultural Heritage and Preservation Studies Program/CHP Research Groups or Labs/CHARG"],
+  "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+  "accessInformation": "Original Item: State Archives of North Carolina\n\nGeoreferenced Item: Cultural Heritage and Archaeology Research Group (CHARG), Wake Forest University",
+  "classification": null,
+  "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Copyright: The original item is presented courtesy of the State Archives of North Carolina, for research and educational purposes. Prior permission from the State Archives is required for any commercial use.<\/span>",
+  "culture": "en-us",
+  "properties": null,
+  "advancedSettings": null,
+  "url": "https://tiles.arcgis.com/tiles/N1TogAKBUw72X7Dw/arcgis/rest/services/1737_New_and_Corrected/MapServer",
+  "proxyFilter": null,
+  "access": "public",
+  "size": 56482227,
+  "subInfo": 0,
+  "appCategories": [],
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "banner": null,
+  "screenshots": [],
+  "listed": false,
+  "commentsEnabled": true,
+  "numComments": 0,
+  "numRatings": 0,
+  "avgRating": 0,
+  "numViews": 399515,
+  "scoreCompleteness": 100,
+  "groupDesignations": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "lastViewed": 1789624800000
+}

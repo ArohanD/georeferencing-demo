@@ -1,0 +1,74 @@
+{
+  "year": 1738,
+  "short_title": "Wimble 1738 coastal chart",
+  "title": "James Wimble's 1738 Map of North Carolina",
+  "creators": [
+    "James Wimble"
+  ],
+  "publication": "1738 chart; reproduction in North Carolina Historical Review 46(2), April 1969; ECU F 251 N892",
+  "institution": "Joyner Library, East Carolina University; reproduction credited to NC Department of Archives and History",
+  "item_url": "https://digital.lib.ecu.edu/1068",
+  "resource_url": "https://digital.lib.ecu.edu/1068",
+  "rights": "ECU labels this reproduction In Copyright \u2014 Educational Use Permitted (InC-EDU). Available for research, teaching and private study; not represented here as an unrestricted scan.",
+  "rights_url": "http://rightsstatements.org/vocab/InC-EDU/1.0/",
+  "mask_polygon": [
+    [
+      1550,
+      100
+    ],
+    [
+      5580,
+      100
+    ],
+    [
+      5580,
+      1970
+    ],
+    [
+      4350,
+      1970
+    ],
+    [
+      4350,
+      3380
+    ],
+    [
+      250,
+      3380
+    ],
+    [
+      210,
+      1720
+    ],
+    [
+      1520,
+      1720
+    ]
+  ],
+  "resolution": 125,
+  "id": "wimble_1738",
+  "access_date": "2026-10-12",
+  "source_path": "deliverables/wimble_1738/source.jpg",
+  "source_sha256": "785fa7ce1521c8984b8edc8ed3eec5d3c25b843005b3b5785c0d37618bdc8cf9",
+  "source_dimensions": [
+    5802,
+    3528
+  ],
+  "download_url": "https://iiif.lib.ecu.edu/cantaloupe/iiif/2/00001068_0001.jp2/full/full/0/default.jpg",
+  "reference_crs": "EPSG:4269",
+  "reference_source": "USGS GNIS: frozen NC populated-place subset plus live landform query for three capes",
+  "reference_sha256": "fed4085cd6e973c3b0a34413fd421da643cfe3442b63f8e5f29526fc3e2267e4",
+  "cape_reference_sha256": "73e21b3ce02f374c6a40e9603e9142e5527982f788ca32d60fc369c8e5bc15a7",
+  "points_sha256": "c3ccff8b73435b738b199103d81017b279c917edb51124d68315400d88cf4634",
+  "method": "Unweighted six-parameter affine in EPSG:32119, fit to five town proxies. Three cape checks and all source-pixel selections frozen before fitting. No checkpoint tuning.",
+  "limitations": [
+    "Approximate coastal comparison only; no precise route, crossing or site identification.",
+    "Modern town centers do not establish exact colonial town locations.",
+    "Cape checks include unknown shoreline migration and point-definition uncertainty.",
+    "Sparse, predominantly coastal controls; interior/extrapolated geography is unvalidated.",
+    "Bowen serving raster is a coastal NC excerpt; full source scan remains available separately.",
+    "Historical source wording and depictions are retained as historical material."
+  ],
+  "mask": "Source-pixel polygon explicitly recorded below; excludes decorative/non-geographic material for Wimble and restricts Bowen to coastal NC.",
+  "source_derivative": "Institutional IIIF JPEG; native resolution for Wimble, 5000-pixel-wide derivative for Bowen."
+}

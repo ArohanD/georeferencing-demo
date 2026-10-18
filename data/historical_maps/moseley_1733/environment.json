@@ -1,0 +1,9 @@
+{
+  "python": "3.13.2",
+  "rasterio": "1.5.1",
+  "gdal": "3.12.4",
+  "pyproj": "3.8.0",
+  "pillow": "12.3.0",
+  "numpy": "2.5.3",
+  "environment": ".venv313; existing isolated Linux environment; dependency lock at tools/processing/requirements.lock.txt"
+}
