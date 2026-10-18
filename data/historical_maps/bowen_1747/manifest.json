@@ -1,0 +1,381 @@
+{
+  "id": "bowen_1747",
+  "title": "Bowen 1747 coastal NC excerpt \u2014 approximate preview",
+  "date": 1747,
+  "source": {
+    "year": 1747,
+    "short_title": "Bowen 1747 coastal NC excerpt",
+    "title": "New and accurate map of the provinces of North and South Carolina, Georgia etc. ...",
+    "creators": [
+      "Emanuel Bowen"
+    ],
+    "publication": "London: W. Innys, 1747; A complete system of Geography, map no.76; Hargrett guan_hmap_hmap1747b6",
+    "institution": "Hargrett Rare Book and Manuscript Library, University of Georgia Libraries / Digital Library of Georgia",
+    "item_url": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6",
+    "resource_url": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6#item",
+    "rights": "No Copyright \u2014 United States (NoC-US), as supplied by the holding institution.",
+    "rights_url": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+    "mask_polygon": [
+      [
+        3150,
+        800
+      ],
+      [
+        4580,
+        800
+      ],
+      [
+        4580,
+        2070
+      ],
+      [
+        3150,
+        2070
+      ]
+    ],
+    "resolution": 200,
+    "id": "bowen_1747",
+    "access_date": "2026-10-12",
+    "source_path": "deliverables/bowen_1747/source.jpg",
+    "source_sha256": "52f517631da24918afb24316db5e89eeab2cde7d5ad2171a943ac4940d6c49e7",
+    "source_dimensions": [
+      5000,
+      4352
+    ],
+    "download_url": "https://dlg.usg.edu/images/iiif/2/dlg%2Fguan%2Fhmap%2Fguan_hmap_hmap1747b6%2Fguan_hmap_hmap1747b6-00001.jp2/full/5000,/0/default.jpg",
+    "reference_crs": "EPSG:4269",
+    "reference_source": "USGS GNIS: frozen NC populated-place subset plus live landform query for three capes",
+    "reference_sha256": "fed4085cd6e973c3b0a34413fd421da643cfe3442b63f8e5f29526fc3e2267e4",
+    "cape_reference_sha256": "73e21b3ce02f374c6a40e9603e9142e5527982f788ca32d60fc369c8e5bc15a7",
+    "points_sha256": "88fcf3d184490f06a433aba53d12f5c864f41b134b6e559f15094ef1c3adfb32",
+    "method": "Unweighted six-parameter affine in EPSG:32119, fit to five town proxies. Three cape checks and all source-pixel selections frozen before fitting. No checkpoint tuning.",
+    "limitations": [
+      "Approximate coastal comparison only; no precise route, crossing or site identification.",
+      "Modern town centers do not establish exact colonial town locations.",
+      "Cape checks include unknown shoreline migration and point-definition uncertainty.",
+      "Sparse, predominantly coastal controls; interior/extrapolated geography is unvalidated.",
+      "Bowen serving raster is a coastal NC excerpt; full source scan remains available separately.",
+      "Historical source wording and depictions are retained as historical material."
+    ],
+    "mask": "Source-pixel polygon explicitly recorded below; excludes decorative/non-geographic material for Wimble and restricts Bowen to coastal NC.",
+    "source_derivative": "Institutional IIIF JPEG; native resolution for Wimble, 5000-pixel-wide derivative for Bowen."
+  },
+  "status": "approximate preview",
+  "accuracy_notice": "Approximate historical-map alignment. For visual comparison only; not suitable for locating routes or sites precisely.",
+  "diagnostic": {
+    "fit": {
+      "n": 5,
+      "rmse_m": 6179.802758214421,
+      "max_m": 11112.789502213662
+    },
+    "check": {
+      "n": 3,
+      "rmse_m": 13897.299992123591,
+      "max_m": 21159.085227800082
+    }
+  },
+  "independent_geographic_validation": null,
+  "points": [
+    {
+      "id": "P01",
+      "name": "Edenton",
+      "role": "fit",
+      "pixel_x": 4074,
+      "pixel_y": 1033,
+      "longitude": -76.6077213,
+      "latitude": 36.057938,
+      "gnis_id": "1025302",
+      "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+      "selection_uncertainty_pixels": 8
+    },
+    {
+      "id": "P02",
+      "name": "Bath",
+      "role": "fit",
+      "pixel_x": 4045,
+      "pixel_y": 1280,
+      "longitude": -76.8116045,
+      "latitude": 35.4771094,
+      "gnis_id": "1018985",
+      "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+      "selection_uncertainty_pixels": 8
+    },
+    {
+      "id": "P03",
+      "name": "New Bern",
+      "role": "fit",
+      "pixel_x": 3933,
+      "pixel_y": 1436,
+      "longitude": -77.0441143,
+      "latitude": 35.1084931,
+      "gnis_id": "1013911",
+      "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+      "selection_uncertainty_pixels": 8
+    },
+    {
+      "id": "P04",
+      "name": "Beaufort",
+      "role": "fit",
+      "pixel_x": 4073,
+      "pixel_y": 1597,
+      "longitude": -76.6638186,
+      "latitude": 34.7182174,
+      "gnis_id": "1019024",
+      "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+      "selection_uncertainty_pixels": 8
+    },
+    {
+      "id": "P05",
+      "name": "Wilmington",
+      "role": "fit",
+      "pixel_x": 3740,
+      "pixel_y": 1844,
+      "longitude": -77.9447102,
+      "latitude": 34.2257256,
+      "gnis_id": "1023269",
+      "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+      "selection_uncertainty_pixels": 8
+    },
+    {
+      "id": "P06",
+      "name": "Cape Hatteras",
+      "role": "check",
+      "pixel_x": 4380,
+      "pixel_y": 1386,
+      "longitude": -75.53015089979122,
+      "latitude": 35.22462199875627,
+      "gnis_id": "982627",
+      "evidence": "Named historical cape tip paired with modern GNIS cape point. Coastline migration and GNIS point placement are unquantified; not a stable surveyed landmark.",
+      "selection_uncertainty_pixels": 8
+    },
+    {
+      "id": "P07",
+      "name": "Cape Lookout",
+      "role": "check",
+      "pixel_x": 4135,
+      "pixel_y": 1717,
+      "longitude": -76.53770090039586,
+      "latitude": 34.59822020007074,
+      "gnis_id": "1019523",
+      "evidence": "Named historical cape tip paired with modern GNIS cape point. Coastline migration and GNIS point placement are unquantified; not a stable surveyed landmark.",
+      "selection_uncertainty_pixels": 8
+    },
+    {
+      "id": "P08",
+      "name": "Cape Fear",
+      "role": "check",
+      "pixel_x": 3740,
+      "pixel_y": 2005,
+      "longitude": -77.96026520020007,
+      "latitude": 33.84045329981333,
+      "gnis_id": "982615",
+      "evidence": "Named historical cape tip paired with modern GNIS cape point. Coastline migration and GNIS point placement are unquantified; not a stable surveyed landmark.",
+      "selection_uncertainty_pixels": 8
+    }
+  ],
+  "transformation": {
+    "method": "Unweighted six-parameter affine in EPSG:32119, fit to five town proxies. Three cape checks and all source-pixel selections frozen before fitting. No checkpoint tuning.",
+    "coefficients_to_EPSG32119": [
+      [
+        331.41361504568226,
+        -21.806331082413422
+      ],
+      [
+        -5.629723554275531,
+        -262.2080165388465
+      ],
+      [
+        -518299.2649539934,
+        617306.1695741903
+      ]
+    ],
+    "statistics": {
+      "fit": {
+        "n": 5,
+        "rmse_m": 6179.802758214421,
+        "max_m": 11112.789502213662
+      },
+      "check": {
+        "n": 3,
+        "rmse_m": 13897.299992123591,
+        "max_m": 21159.085227800082
+      }
+    },
+    "residuals": [
+      {
+        "id": "P01",
+        "name": "Edenton",
+        "role": "fit",
+        "dx_m": 951.3029631815152,
+        "dy_m": -1019.8628253499046,
+        "error_m": 1394.667526792182
+      },
+      {
+        "id": "P02",
+        "name": "Bath",
+        "role": "fit",
+        "dx_m": 6893.293473151163,
+        "dy_m": -304.41853599395836,
+        "error_m": 6900.0119965145805
+      },
+      {
+        "id": "P03",
+        "name": "New Bern",
+        "role": "fit",
+        "dx_m": -10814.555693406845,
+        "dy_m": 2557.2398547480407,
+        "error_m": 11112.789502213662
+      },
+      {
+        "id": "P04",
+        "name": "Beaufort",
+        "role": "fit",
+        "dx_m": -999.9412918488961,
+        "dy_m": -180.37674120470183,
+        "error_m": 1016.0798964215694
+      },
+      {
+        "id": "P05",
+        "name": "Wilmington",
+        "role": "fit",
+        "dx_m": 3969.900548925041,
+        "dy_m": -1052.5817521986319,
+        "error_m": 4107.071793068254
+      },
+      {
+        "id": "P06",
+        "name": "Cape Hatteras",
+        "role": "check",
+        "dx_m": 104.74757241888437,
+        "dy_m": -10725.027151001297,
+        "error_m": 10725.53865517451
+      },
+      {
+        "id": "P07",
+        "name": "Cape Lookout",
+        "role": "check",
+        "dx_m": 6993.973979726783,
+        "dy_m": -19969.757526024507,
+        "error_m": 21159.085227800082
+      },
+      {
+        "id": "P08",
+        "name": "Cape Fear",
+        "role": "check",
+        "dx_m": 4049.074417903321,
+        "dy_m": -515.5292916660146,
+        "error_m": 4081.7611508128175
+      }
+    ],
+    "master_pixel_size_m": 200,
+    "web_pixel_size_map_units": 200,
+    "pixel_size_is_not_accuracy": true,
+    "point_selection_uncertainty_pixels": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ]
+  },
+  "master": {
+    "path": "deliverables/bowen_1747/bowen_1747_approximate_master_32119.tif",
+    "bytes": 9762822,
+    "sha256": "9ac10b9b5dec888594eeb93edf7ede7e3a1de279304ea108ba6a9383fa80e9c0",
+    "crs": "EPSG:32119",
+    "dimensions": [
+      2406,
+      1822
+    ],
+    "bounds": [
+      514000.0,
+      -25400.0,
+      995200.0,
+      339000.0
+    ],
+    "geographic_bounds": [
+      -80.07100881818708,
+      33.44845719187125,
+      -74.68274016142904,
+      36.805567585761644
+    ],
+    "resolution": [
+      200.0,
+      200.0
+    ],
+    "overviews": [
+      2,
+      4,
+      8
+    ],
+    "bands": 4,
+    "color_interpretation": [
+      "red",
+      "green",
+      "blue",
+      "alpha"
+    ],
+    "compression": "Compression.deflate",
+    "cog_valid": true,
+    "errors": [],
+    "warnings": [],
+    "sampled_rgb_range": [
+      0,
+      197
+    ],
+    "sampled_alpha_nonzero_fraction": 0.91912841796875
+  },
+  "web": {
+    "path": "deliverables/bowen_1747/bowen_1747_approximate_web_3857.tif",
+    "bytes": 14050852,
+    "sha256": "6922bb054249966609d517fd1b1df14a59b14aea28e526770082154962025c51",
+    "crs": "EPSG:3857",
+    "dimensions": [
+      3000,
+      2285
+    ],
+    "bounds": [
+      -8913463.928944303,
+      3955040.7636857713,
+      -8313463.928944303,
+      4412040.763685771
+    ],
+    "geographic_bounds": [
+      -80.07100881818707,
+      33.44890092237239,
+      -74.68111711346994,
+      36.80557338937635
+    ],
+    "resolution": [
+      200.0,
+      200.0
+    ],
+    "overviews": [
+      2,
+      4,
+      8
+    ],
+    "bands": 4,
+    "color_interpretation": [
+      "red",
+      "green",
+      "blue",
+      "alpha"
+    ],
+    "compression": "Compression.deflate",
+    "cog_valid": true,
+    "errors": [],
+    "warnings": [],
+    "sampled_rgb_range": [
+      0,
+      198
+    ],
+    "sampled_alpha_nonzero_fraction": 0.87518310546875
+  },
+  "workspace": "history",
+  "layer_name": "history:bowen_1747",
+  "publication_status": "not uploaded; authenticated REST access required"
+}

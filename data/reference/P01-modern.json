@@ -1,0 +1,21 @@
+{
+  "request_url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/export?bbox=-8964349.871434765%2C4249441.660042111%2C-8952349.871434765%2C4261441.660042111&bboxSR=3857&imageSR=3857&size=600%2C600&format=jpg&transparent=false&f=json",
+  "response": {
+    "href": "https://basemap.nationalmap.gov/arcgis/rest/directories/basemap_output/USGSTopo_MapServer/_ags_map3396e144cae149e488e67bae658f585f.jpg",
+    "width": 600,
+    "height": 600,
+    "extent": {
+      "xmin": -8964349.871434765,
+      "ymin": 4249441.660042111,
+      "xmax": -8952349.871434765,
+      "ymax": 4261441.660042111,
+      "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+      }
+    },
+    "scale": 75590.4
+  },
+  "sha256": "f344bcfa12640cb1c73934d2ea3c64fc840cf518e29e25728b8979ec42398667",
+  "credit": "USGS The National Map; full attribution in data/metadata/usgs-topo-service.json"
+}

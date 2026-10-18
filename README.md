@@ -1,24 +1,49 @@
-# The Listening Machine — Collet 1770 demo
+# The Listening Machine
 
-Public historical-map georeferencing proof of concept for an NC State MGIST capstone.
+A monorepo for historical-map applications, shared geospatial data, processing tools, and research.
 
-**Provisional regional overlay:** four held-out town proxies give an 8.02 km RMSE, with a maximum error of 13.08 km. This is not a source of precise historical settlement, road or parcel locations. Eight town proxies fit one affine model; four were reserved before fitting. The demo includes an opacity slider, modern reference maps, point discrepancies, static comparisons, a feasibility report and review materials.
+| Directory | Contents |
+| --- | --- |
+| [app/](app/) | Static Leaflet app, app build script, and browser tests |
+| [tools/processing/](tools/processing/) | Python raster processing, source downloads, GeoServer publishing, and verification |
+| [data/](data/) | Shared source metadata, frozen control points, reference images, and map manifests |
+| [research/](research/) | Point-review page, historical research reports, and platform evaluations |
+| [docs/](docs/) | Integration notes and recorded service/app validation |
+| [outputs/](outputs/) | Original Collet pilot results and review images; large rasters and scratch previews are ignored |
+| `deliverables/` | Ignored local scans, generated multi-map rasters, previews, and publication receipts |
+| `app/dist/` | Ignored viewer build, generated from app-owned assets only |
 
-Open the GitHub Pages website linked in this repository’s About section. For local use, run `python -m http.server 8000 --bind 127.0.0.1` from this folder and open http://localhost:8000/preview/ . All imagery and Leaflet are bundled; there are no third-party map requests, API keys, analytics or paid services in the viewer.
+The frontend lives in `app/`, alongside shared data, processing tools, and research. Paths stored in processing manifests are relative to the repository root; existing data and raster locations are preserved.
 
-## Included material
+## Run the viewer
 
-- `preview/`: viewer and annotated point-review page.
-- `outputs/`: display overlays, comparisons, crops and selected method/error records.
-- `reports/`: feasibility and source research, with browser-readable HTML copies.
-- `data/`: selected reference images, control-point tables and source credits.
+From the repository root:
 
-This repository is a display package. It deliberately excludes the source scan, full COG, processing scratch files, Python environment and machine-specific metadata. It is not the complete reproducibility archive. Public corrections should not contain personal or confidential information; the current review CSV is a blank response template with baseline candidates.
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1 --directory app/public
+```
 
-## Attribution and reuse
+Open http://localhost:8000/ . Live map services require internet. See [viewer usage and browser tests](app/README.md).
 
-Historical scan: Library of Congress, Geography and Map Division, [John Collet, A compleat map of North-Carolina from an actual survey, London: S. Hooper, 1770, Copy 1](https://www.loc.gov/resource/g3900.ar150000/). See `data/metadata/source.json` for provenance and stated reuse terms.
+## Build and check
 
-Modern maps: USGS The National Map and its credited contributors; full attribution is preserved in `data/metadata/usgs-topo-service.json`. Reference town coordinates: USGS GNIS, NAD83. Leaflet 1.9.4 is provided under its BSD license in `preview/LEAFLET-LICENSE`. The map’s historical content reflects its time; inclusion is not endorsement.
+```bash
+python3 app/scripts/package_demo.py
+python3 tools/check_layout.py
+```
 
-No additional blanket license is asserted over third-party material or the project’s original writing/code. Retain source credits and the provisional-accuracy notice when sharing the demo.
+Deploy only `app/dist/`. Its existing root redirect and `/preview/` URL are preserved. Building does not publish anything. See [viewer publishing](app/deployment/README.md) for the GitHub Pages workflow and one-time setup.
+
+## Processing and research
+
+See [processing instructions](tools/processing/README.md) and [historical map provenance](data/historical_maps/README.md). Python dependencies belong to processing, not the static app.
+
+To inspect research images and generated deliverables locally, serve the repository root:
+
+```bash
+python3 -m http.server 8001 --bind 127.0.0.1
+```
+
+Open http://localhost:8001/research/review.html or http://localhost:8001/deliverables/ . This broader local server is for research review, not the deployment package.
+
+Downloaded datasets and original scans remain local and ignored where configured. Keep checksum-pinned snapshots for reproducibility. Historical validation records describe their original runs; they are not claims that remote services have been rechecked today.

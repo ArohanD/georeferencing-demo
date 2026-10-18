@@ -1,0 +1,11 @@
+{
+  "input_files_checked": 47,
+  "fitting_count": 8,
+  "checking_count": 4,
+  "numeric_errors_recomputed": true,
+  "cog_strict_validation": "passed",
+  "alpha_crs_resolution_overviews": "passed",
+  "preview_local_links_and_images": "passed",
+  "interactive_browser_test": "not run; no browser engine installed",
+  "localhost_http_smoke": "passed: preview, JS, JSON, review and both image layers returned HTTP 200"
+}

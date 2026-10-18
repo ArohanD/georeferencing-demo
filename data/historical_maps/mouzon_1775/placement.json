@@ -1,0 +1,115 @@
+{
+  "method": "affine graticule placement only; not modern georeferencing",
+  "transform": [
+    0.0004914932900246924,
+    -2.9235501974814865e-06,
+    -84.01539493998753,
+    -2.138696227476879e-06,
+    -0.00040059318616450165,
+    36.76036804376343
+  ],
+  "source_crs_assumption": "EPSG:4326, printed London longitude provisionally equated to Greenwich; plate-carree assumption",
+  "metric_residual_crs": "+proj=eqc +lat_ts=34 +lon_0=-80 +datum=WGS84 +units=m",
+  "residuals": [
+    {
+      "point_id": "L01",
+      "axis": "longitude",
+      "residual_degrees": -0.01029048817333944,
+      "component_residual_m_local_eqc": -949.6889885374156
+    },
+    {
+      "point_id": "L02",
+      "axis": "longitude",
+      "residual_degrees": -0.011532269590205146,
+      "component_residual_m_local_eqc": -1064.2905621365276
+    },
+    {
+      "point_id": "L03",
+      "axis": "longitude",
+      "residual_degrees": 0.012084965856530516,
+      "component_residual_m_local_eqc": 1115.2978175060862
+    },
+    {
+      "point_id": "L04",
+      "axis": "longitude",
+      "residual_degrees": 0.009813421056449556,
+      "component_residual_m_local_eqc": 905.6613991682917
+    },
+    {
+      "point_id": "L05",
+      "axis": "longitude",
+      "residual_degrees": 0.014184967198943355,
+      "component_residual_m_local_eqc": 1309.1028262879058
+    },
+    {
+      "point_id": "L06",
+      "axis": "longitude",
+      "residual_degrees": 0.006071050372327136,
+      "component_residual_m_local_eqc": 560.2853421854736
+    },
+    {
+      "point_id": "L07",
+      "axis": "longitude",
+      "residual_degrees": -0.005611524556798031,
+      "component_residual_m_local_eqc": -517.876605145446
+    },
+    {
+      "point_id": "L08",
+      "axis": "longitude",
+      "residual_degrees": -0.014720122164249005,
+      "component_residual_m_local_eqc": -1358.491229359844
+    },
+    {
+      "point_id": "B01",
+      "axis": "latitude",
+      "residual_degrees": 0.0018513578166192701,
+      "component_residual_m_local_eqc": 206.09220942220392
+    },
+    {
+      "point_id": "B02",
+      "axis": "latitude",
+      "residual_degrees": -0.001854429116576739,
+      "component_residual_m_local_eqc": -206.43410496954277
+    },
+    {
+      "point_id": "B03",
+      "axis": "latitude",
+      "residual_degrees": -0.0018631911108677457,
+      "component_residual_m_local_eqc": -207.4094857123512
+    },
+    {
+      "point_id": "B04",
+      "axis": "latitude",
+      "residual_degrees": 0.0018662624107790293,
+      "component_residual_m_local_eqc": 207.7513812545487
+    }
+  ],
+  "independent_checkpoint_count": 0,
+  "independent_rmse_m": null,
+  "pixel_convention": "upper-left corner (0,0); columns right and lines down; original 17109 x 12467 scan",
+  "tick_selection_precision_pixels": 10,
+  "main_map_polygon_pixels": [
+    [
+      270,
+      365
+    ],
+    [
+      16770,
+      310
+    ],
+    [
+      16790,
+      12040
+    ],
+    [
+      370,
+      12140
+    ]
+  ],
+  "excluded_inset_rectangle_pixels": [
+    11350,
+    8700,
+    16800,
+    12100
+  ]
+}

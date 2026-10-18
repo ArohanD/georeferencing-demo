@@ -1,0 +1,12 @@
+{
+  "platform": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [GCC 11.4.0]",
+  "executable": "/home/arohan/code/georef/.venv313/bin/python",
+  "rasterio": "1.5.1",
+  "bundled_gdal": "3.12.4",
+  "pyproj": "3.8.0",
+  "proj_runtime": "9.8.1",
+  "existing_cli_gdal": "3.9.3 (inspected only; not used for processing)",
+  "isolation": ".venv313, Python 3.13.2 venv; prebuilt wheels; no system packages or GIS installations modified",
+  "unused_failed_environment": ".venv was an unsuccessful Python 3.12 venv attempt (ensurepip unavailable); do not use it"
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://arohand.github.io/georeferencing-demo/",
+  "repository": "https://github.com/ArohanD/georeferencing-demo",
+  "manifest_matches": true,
+  "public_files_hash_verified": 80,
+  "note": "HTTP content verification; not interactive browser automation",
+  "excluded_from_publication": [
+    "credentials",
+    "Python environments",
+    "source scan",
+    "COG and scratch TIFFs",
+    "local machine metadata"
+  ],
+  "package_bytes": 38124725
+}

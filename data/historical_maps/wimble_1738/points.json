@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P01",
+    "name": "Edenton",
+    "role": "fit",
+    "pixel_x": 3265,
+    "pixel_y": 302,
+    "longitude": -76.6077213,
+    "latitude": 36.057938,
+    "gnis_id": "1025302",
+    "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+    "selection_uncertainty_pixels": 12
+  },
+  {
+    "id": "P02",
+    "name": "Bath",
+    "role": "fit",
+    "pixel_x": 2945,
+    "pixel_y": 980,
+    "longitude": -76.8116045,
+    "latitude": 35.4771094,
+    "gnis_id": "1018985",
+    "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+    "selection_uncertainty_pixels": 12
+  },
+  {
+    "id": "P03",
+    "name": "New Bern",
+    "role": "fit",
+    "pixel_x": 2440,
+    "pixel_y": 1534,
+    "longitude": -77.0441143,
+    "latitude": 35.1084931,
+    "gnis_id": "1013911",
+    "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+    "selection_uncertainty_pixels": 12
+  },
+  {
+    "id": "P04",
+    "name": "Beaufort",
+    "role": "fit",
+    "pixel_x": 2638,
+    "pixel_y": 1937,
+    "longitude": -76.6638186,
+    "latitude": 34.7182174,
+    "gnis_id": "1019024",
+    "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+    "selection_uncertainty_pixels": 12
+  },
+  {
+    "id": "P05",
+    "name": "Wilmington",
+    "role": "fit",
+    "pixel_x": 886,
+    "pixel_y": 2472,
+    "longitude": -77.9447102,
+    "latitude": 34.2257256,
+    "gnis_id": "1023269",
+    "evidence": "Named printed town symbol/grid paired with modern GNIS populated-place center. Uncertain historical correspondence, not a verified landmark.",
+    "selection_uncertainty_pixels": 12
+  },
+  {
+    "id": "P06",
+    "name": "Cape Hatteras",
+    "role": "check",
+    "pixel_x": 4558,
+    "pixel_y": 1563,
+    "longitude": -75.53015089979122,
+    "latitude": 35.22462199875627,
+    "gnis_id": "982627",
+    "evidence": "Named historical cape tip paired with modern GNIS cape point. Coastline migration and GNIS point placement are unquantified; not a stable surveyed landmark.",
+    "selection_uncertainty_pixels": 12
+  },
+  {
+    "id": "P07",
+    "name": "Cape Lookout",
+    "role": "check",
+    "pixel_x": 2828,
+    "pixel_y": 2378,
+    "longitude": -76.53770090039586,
+    "latitude": 34.59822020007074,
+    "gnis_id": "1019523",
+    "evidence": "Named historical cape tip paired with modern GNIS cape point. Coastline migration and GNIS point placement are unquantified; not a stable surveyed landmark.",
+    "selection_uncertainty_pixels": 12
+  },
+  {
+    "id": "P08",
+    "name": "Cape Fear",
+    "role": "check",
+    "pixel_x": 743,
+    "pixel_y": 2986,
+    "longitude": -77.96026520020007,
+    "latitude": 33.84045329981333,
+    "gnis_id": "982615",
+    "evidence": "Named historical cape tip paired with modern GNIS cape point. Coastline migration and GNIS point placement are unquantified; not a stable surveyed landmark.",
+    "selection_uncertainty_pixels": 12
+  }
+]

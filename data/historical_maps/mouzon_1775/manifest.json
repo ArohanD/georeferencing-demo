@@ -1,0 +1,209 @@
+{
+  "id": "mouzon_1775",
+  "title": "An Accurate Map of North and South Carolina",
+  "date": 1775,
+  "attribution": "Library of Congress, Geography and Map Division",
+  "source_url": "https://www.loc.gov/item/74692510/",
+  "status": "approximate only",
+  "georeferencing_status": "approximate only",
+  "accuracy_disclaimer": "Unvalidated graticule placement with assumed London/Greenwich equivalence and affine plate-carree geometry. Zero modern fitting controls. One coarse independent shoreline check available in validation/review; insufficient spatial validation. Rectification does not establish accuracy of historical routes or locations.",
+  "geoserver_base_url": "https://vclvm176-164.vclgis.cnr.ncsu.edu/geoserver",
+  "suggested_layer_name": "mouzon_1775",
+  "workspace": "pending",
+  "publication_status": "pending",
+  "master": {
+    "path": "deliverables/mouzon_1775/mouzon_1775-approximate-master.tif",
+    "bytes": 595180497,
+    "sha256": "9f3190ec90a265ef098bc7e5e3b2ffce8ace794a983e2d63525ba2d19be5f80c",
+    "crs": "EPSG:4326",
+    "dimensions": [
+      17109,
+      12467
+    ],
+    "bounds": [
+      -84.05184284029953,
+      31.729581838094685,
+      -75.60643624095506,
+      36.76036804376343
+    ],
+    "geographic_bounds": [
+      -84.05184284029953,
+      31.729581838094685,
+      -75.60643624095506,
+      36.76036804376343
+    ],
+    "resolution": [
+      0.000491497943190864,
+      0.0004006038541342111
+    ],
+    "overviews": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "bands": 4,
+    "color_interpretation": [
+      "red",
+      "green",
+      "blue",
+      "alpha"
+    ],
+    "compression": "Compression.deflate",
+    "cog_valid": true,
+    "errors": [],
+    "warnings": [],
+    "sampled_rgb_range": [
+      0,
+      249
+    ],
+    "sampled_alpha_nonzero_fraction": 0.8363037109375
+  },
+  "web": {
+    "path": "deliverables/mouzon_1775/mouzon_1775-approximate-3857.tif",
+    "bytes": 151768059,
+    "sha256": "c06e3d5eba5f1c4543440bf1b233f753c0203b70bd635c448d4a59ed2ceef9a3",
+    "crs": "EPSG:3857",
+    "dimensions": [
+      9402,
+      6779
+    ],
+    "bounds": [
+      -9356608.3452184,
+      3727857.610454685,
+      -8416408.3452184,
+      4405757.610454685
+    ],
+    "geographic_bounds": [
+      -84.05184284029951,
+      31.729516588996074,
+      -75.60588253900778,
+      36.760368043763414
+    ],
+    "resolution": [
+      100.0,
+      100.0
+    ],
+    "overviews": [
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "bands": 4,
+    "color_interpretation": [
+      "red",
+      "green",
+      "blue",
+      "alpha"
+    ],
+    "compression": "Compression.deflate",
+    "cog_valid": true,
+    "errors": [],
+    "warnings": [],
+    "sampled_rgb_range": [
+      0,
+      250
+    ],
+    "sampled_alpha_nonzero_fraction": 0.83184814453125
+  },
+  "output_raster_path": "deliverables/mouzon_1775/mouzon_1775-approximate-3857.tif",
+  "bounds": [
+    -84.05184284029951,
+    31.729516588996074,
+    -75.60588253900778,
+    36.760368043763414
+  ],
+  "bounds_crs": "EPSG:4326",
+  "previews": [
+    {
+      "preview": "deliverables/mouzon_1775/full_extent-comparison.png",
+      "reference_extent": {
+        "xmin": -9356608.345218398,
+        "ymin": 3701174.277121352,
+        "xmax": -8416408.3452184,
+        "ymax": 4432440.943788017,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "opacity": 0.55
+    },
+    {
+      "preview": "deliverables/mouzon_1775/eno_haw_hillsborough-comparison.png",
+      "reference_extent": {
+        "xmin": -8890449.20500474,
+        "ymin": 4225203.7521830285,
+        "xmax": -8731426.187570462,
+        "ymax": 4348888.321298579,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "opacity": 0.55
+    },
+    {
+      "preview": "deliverables/mouzon_1775/cape_fear-comparison.png",
+      "reference_extent": {
+        "xmin": -8746492.88682509,
+        "ymin": 3988590.139019254,
+        "xmax": -8608215.72784626,
+        "ymax": 4096139.0404472337,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "opacity": 0.55
+    },
+    {
+      "preview": "deliverables/mouzon_1775/albemarle-comparison.png",
+      "reference_extent": {
+        "xmin": -8571600.791082066,
+        "ymin": 4249593.868469463,
+        "xmax": -8404621.554892154,
+        "ymax": 4379466.607728283,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "opacity": 0.55
+    },
+    {
+      "preview": "deliverables/mouzon_1775/neuse_trent_review-comparison.png",
+      "reference_extent": {
+        "xmin": -8588297.69947784,
+        "ymin": 4166599.3964405563,
+        "xmax": -8563809.441949753,
+        "ymax": 4185645.818962402,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "opacity": 0.55
+    }
+  ],
+  "validation": {
+    "modern_fit_points": 0,
+    "independent_checkpoints": 1,
+    "fit_rmse_m": null,
+    "checkpoint_rmse_m": 43972.67210050226,
+    "checkpoint_scope": "One coarse estuarine shoreline check only, roughly 1 km correspondence uncertainty; not spatial validation"
+  },
+  "visual_qa": {
+    "inspected": [
+      "full_extent-comparison.png",
+      "eno_haw_hillsborough-comparison.png",
+      "albemarle-comparison.png",
+      "cape_fear-comparison.png"
+    ],
+    "result": "Not mirrored. Insets masked. Labels and white preserved. Gross westward coastal mismatch obvious; approximate only."
+  }
+}

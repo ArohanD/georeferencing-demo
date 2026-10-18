@@ -1,2 +1,30 @@
 .DS_Store
 Thumbs.db
+.venv*/
+__pycache__/
+*.pyc
+.cache/
+.tools/
+.local-auth/
+outputs/*working*
+outputs/*intermediate*
+
+# Historical-map processing: local scans, generated rasters and previews
+/deliverables/
+/data/original/
+/data/reference/*.zip
+*.tif
+*.tiff
+*.jp2
+
+# Downloaded reference snapshots: retain locally for checksum verification
+/data/reference/PopulatedPlaces.txt
+/data/reference/HistoricalFeatures.txt
+/data/reference/PopulatedPlaces-NC.csv
+/data/reference/HistoricalFeatures-NC.csv
+/data/reference/2024_gaz_place_37.txt
+
+# Local inspection previews (keep cited evidence locally)
+/outputs/crop-*.jpg
+/outputs/source-overview.jpg
+/outputs/point-inspection.jpg

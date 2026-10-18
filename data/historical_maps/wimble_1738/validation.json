@@ -1,0 +1,14 @@
+{
+  "cogs_validated": true,
+  "source_points_frozen": true,
+  "local_browser": {
+    "image_loaded": true,
+    "opacity": true,
+    "visibility": true,
+    "pan_zoom_fit": true,
+    "basemap_loaded": true,
+    "page_errors": []
+  },
+  "geoserver_published": false,
+  "blocker": "HTTP 401; publishing credentials required"
+}

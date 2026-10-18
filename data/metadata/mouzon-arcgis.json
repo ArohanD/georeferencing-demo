@@ -1,0 +1,67 @@
+{
+  "id": "6750d9a5986d4490b75ea14507a94ec8",
+  "owner": "dloberger",
+  "ownerId": "4c186e245b11d29df5a76a6c9558a99f",
+  "orgId": "I1GRJkgQfmuQy6nh",
+  "created": 1352326131000,
+  "modified": 1352326958000,
+  "guid": null,
+  "name": "mouzonimage",
+  "title": "mouzonimage",
+  "type": "Map Service",
+  "typeKeywords": [
+    "Data",
+    "Service",
+    "Map Service",
+    "ArcGIS Server",
+    "Hosted Service"
+  ],
+  "description": "georeferenced mouzon map image",
+  "tags": [
+    "historic map",
+    " mouzon"
+  ],
+  "snippet": "Map describing the factors in an historic road prediction model.",
+  "thumbnail": "thumbnail/thumbnail.png",
+  "documentation": null,
+  "extent": [
+    [
+      -84.3296949290942,
+      31.7469487036191
+    ],
+    [
+      -75.1584469807827,
+      36.7382271940604
+    ]
+  ],
+  "categories": [],
+  "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+  "accessInformation": null,
+  "classification": null,
+  "licenseInfo": null,
+  "culture": "en-us",
+  "properties": null,
+  "advancedSettings": null,
+  "url": "https://tiles.arcgis.com/tiles/I1GRJkgQfmuQy6nh/arcgis/rest/services/mouzonimage/MapServer",
+  "proxyFilter": null,
+  "access": "public",
+  "size": 631184488,
+  "subInfo": 0,
+  "appCategories": [],
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "banner": null,
+  "screenshots": [],
+  "listed": false,
+  "commentsEnabled": true,
+  "numComments": 0,
+  "numRatings": 0,
+  "avgRating": 0,
+  "numViews": 1410,
+  "scoreCompleteness": 46,
+  "groupDesignations": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "lastViewed": 1789610400000
+}

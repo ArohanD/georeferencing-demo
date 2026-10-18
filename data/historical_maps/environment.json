@@ -1,0 +1,14 @@
+{
+  "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [GCC 11.4.0]",
+  "executable": "/home/arohan/code/georef/.venv313/bin/python",
+  "platform": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "rasterio": "1.5.1",
+  "gdal": "3.12.4",
+  "pyproj": "3.8.0",
+  "proj": "9.8.1",
+  "pillow": "12.3.0",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "dependency_lock": "tools/processing/requirements.lock.txt",
+  "isolation": "Existing .venv313 Linux virtual environment; Windows ArcGIS environment untouched"
+}

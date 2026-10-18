@@ -1,0 +1,140 @@
+{
+  "id": "moseley_1733",
+  "title": "A New and Correct Map of the Province of North Carolina",
+  "date": 1733,
+  "attribution": "East Carolina University, J. Y. Joyner Library, East Carolina Manuscript Collection MC0017",
+  "source_url": "https://digital.lib.ecu.edu/62315",
+  "source_scan": {
+    "path": "deliverables/moseley_1733/original-ecu-62315-10000.jpg",
+    "download_url": "https://iiif.lib.ecu.edu/cantaloupe/iiif/2/00062315_0001.jp2/full/10000,/0/default.jpg",
+    "dimensions": [
+      10000,
+      7918
+    ],
+    "bytes": 13618523,
+    "sha256": "631fdab964343cb2a2cac0f41231137e85abc2cd13bbe7d9c768f60f97f53b5d"
+  },
+  "status": "approximate only",
+  "accuracy_disclaimer": "Sparse coastal feature proxies and independent coastal diagnostic checks do not validate interior placement or historical routes. No independent interior accuracy estimate.",
+  "suggested_layer_name": "moseley_1733",
+  "geoserver_base_url": "https://vclvm176-164.vclgis.cnr.ncsu.edu/geoserver",
+  "workspace": "pending",
+  "publication_status": "pending",
+  "service_url": null,
+  "master": {
+    "path": "deliverables/moseley_1733/moseley_1733-approximate-master.cog.tif",
+    "bytes": 29064289,
+    "sha256": "286a680341fd6b845786bd945cd507d97653edfd041a4ff06a64f95f74006cb8",
+    "crs": "EPSG:32119",
+    "dimensions": [
+      5126,
+      4332
+    ],
+    "bounds": [
+      473883.7159277918,
+      -107009.82893413946,
+      986483.7159277918,
+      326190.17106586054
+    ],
+    "geographic_bounds": [
+      -80.51817232695029,
+      32.71689208783996,
+      -74.78629529598119,
+      36.69016712145859
+    ],
+    "resolution": [
+      100.0,
+      100.0
+    ],
+    "overviews": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "bands": 4,
+    "color_interpretation": [
+      "red",
+      "green",
+      "blue",
+      "alpha"
+    ],
+    "compression": "Compression.deflate",
+    "cog_valid": true,
+    "errors": [],
+    "warnings": [],
+    "sampled_rgb_range": [
+      0,
+      223
+    ],
+    "sampled_alpha_nonzero_fraction": 0.63031005859375
+  },
+  "web": {
+    "path": "deliverables/moseley_1733/moseley_1733-approximate-web.cog.tif",
+    "bytes": 27200550,
+    "sha256": "bfd8397bc0d13603f66508ff99532eb46392e730c2e9da1974570d4c51a95ef7",
+    "crs": "EPSG:3857",
+    "dimensions": [
+      5105,
+      4306
+    ],
+    "bounds": [
+      -8963241.943041157,
+      3857757.7715218626,
+      -8325116.943041157,
+      4396007.771521863
+    ],
+    "geographic_bounds": [
+      -80.51817232695029,
+      32.716677734594775,
+      -74.78579792016258,
+      36.6901681903715
+    ],
+    "resolution": [
+      125.0,
+      125.0
+    ],
+    "overviews": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "bands": 4,
+    "color_interpretation": [
+      "red",
+      "green",
+      "blue",
+      "alpha"
+    ],
+    "compression": "Compression.deflate",
+    "cog_valid": true,
+    "errors": [],
+    "warnings": [],
+    "sampled_rgb_range": [
+      0,
+      224
+    ],
+    "sampled_alpha_nonzero_fraction": 0.6036376953125
+  },
+  "validation": {
+    "fit": {
+      "n": 4,
+      "rmse_m": 3196.5812816367425,
+      "max_m": 5053.725268670221
+    },
+    "check": {
+      "n": 2,
+      "rmse_m": 20454.51796666996,
+      "max_m": 26236.36868360294
+    }
+  },
+  "output_raster_path": "deliverables/moseley_1733/moseley_1733-approximate-web.cog.tif",
+  "bounds": [
+    -80.51817232695029,
+    32.716677734594775,
+    -74.78579792016258,
+    36.6901681903715
+  ],
+  "bounds_crs": "EPSG:4326"
+}

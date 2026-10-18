@@ -1,0 +1,20 @@
+{
+  "catalog_url": "https://www.loc.gov/item/74692510/",
+  "download_url": "https://tile.loc.gov/storage-services/service/gmd/gmd390/g3900/g3900/ar139400.jp2",
+  "institution": "Library of Congress",
+  "attribution": "Library of Congress, Geography and Map Division",
+  "rights_statement": [
+    "<p><strong>The content of the Library of Congress Geography and Map Division digitized collections is free to use and reuse unless a Rights Advisory statement is present that indicates otherwise.</strong></p>\n<p>Credit Line: Library of Congress, Geography and Map Division.</p>\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a>.</p>\n<p>For guidance about compiling full citations consult <a href=\"/programs/teachers/getting-started-with-primary-sources/citing/\">Citing Primary Sources</a>.</p>\n"
+  ],
+  "dimensions": [
+    17109,
+    12467
+  ],
+  "file_bytes": 38434242,
+  "sha256": "5d24c388552b938ea0c208630dd37acce9924c634752a533eae5b0a6bd3d1fce",
+  "source_path": "deliverables/mouzon_1775/original.jp2",
+  "original_map_date": "1775-05-30 visibly printed; catalog 1775",
+  "reproduction_date": null,
+  "digital_derivative": "LOC full-pixel-resolution JP2; 17109x12467; TIFF dimensions not separately verified. JPEG2000 may be lossy; output compression is lossless. TIFF master advertised 639920700 bytes, JP2 chosen to avoid redundant bulky acquisition.",
+  "visual_inspection": "Title and printed May 30 1775 verified. North and South Carolina with Georgia, western Indian frontiers. Two inset maps (Port Royal and Charlestown) excluded from alpha. Multiple cloth-mounted section seams and fold damage preserved."
+}

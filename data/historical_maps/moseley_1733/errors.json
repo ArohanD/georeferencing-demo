@@ -1,0 +1,72 @@
+{
+  "method": "affine",
+  "master_crs": "EPSG:32119",
+  "affine": [
+    47.41092031069773,
+    4.85191757707047,
+    473883.7159277918,
+    5.396512753930294,
+    -47.88613870163385,
+    272225.0435265576,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "errors": [
+    {
+      "point_id": "M01",
+      "status": "fit",
+      "dx_m": 2300.7429140104214,
+      "dy_m": 982.09929155604,
+      "error_m": 2501.5868913239933
+    },
+    {
+      "point_id": "M02",
+      "status": "fit",
+      "dx_m": -4647.978705666261,
+      "dy_m": -1984.0446171568037,
+      "error_m": 5053.725268670221
+    },
+    {
+      "point_id": "M03",
+      "status": "fit",
+      "dx_m": 2742.227587044472,
+      "dy_m": 1170.5522395058942,
+      "error_m": 2981.6110887505115
+    },
+    {
+      "point_id": "M04",
+      "status": "fit",
+      "dx_m": -394.99179538921453,
+      "dy_m": -168.6069139058527,
+      "error_m": 429.4727114051028
+    },
+    {
+      "point_id": "M05",
+      "status": "check",
+      "dx_m": 37.52125654206611,
+      "dy_m": -12183.027577372326,
+      "error_m": 12183.085356169311
+    },
+    {
+      "point_id": "M06",
+      "status": "check",
+      "dx_m": 25271.46330661606,
+      "dy_m": 7049.8357459092,
+      "error_m": 26236.36868360294
+    }
+  ],
+  "statistics": {
+    "fit": {
+      "n": 4,
+      "rmse_m": 3196.5812816367425,
+      "max_m": 5053.725268670221
+    },
+    "check": {
+      "n": 2,
+      "rmse_m": 20454.51796666996,
+      "max_m": 26236.36868360294
+    }
+  },
+  "warning": "Checks are independent but weak coastal morphology proxies; these are diagnostic discrepancies, not certified positional accuracy."
+}

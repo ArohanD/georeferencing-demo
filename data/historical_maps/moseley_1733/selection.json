@@ -1,0 +1,38 @@
+{
+  "convention": "pixel and line measured from upper-left image outer corner; x/pixel increases right, y/line increases down; subpixel values denote converted display positions, not measurement precision. No +0.5 added to continuously digitized coordinates. QGIS .points uses negative image Y and disabled independent checks.",
+  "original_dimensions": [
+    10000,
+    7918
+  ],
+  "display_conversion": "Crops originally viewed at width 1300: original_x = crop_left + displayed_x * crop_width/1300; original_y = crop_top + displayed_y * crop_height/display_height. Final point centers visually refined on 800x800 original-resolution annotated crops before fit. Modern coordinates: longitude=xmin+pixel/1200*(xmax-xmin); latitude=ymax-line/1200*(ymax-ymin), actual returned USGS EPSG:4326 extent.",
+  "initial_historical_crop_boxes": {
+    "northeast": [
+      6200,
+      1200,
+      9800,
+      3500
+    ],
+    "middle": [
+      5500,
+      2900,
+      7900,
+      4700
+    ],
+    "south": [
+      2000,
+      4800,
+      4800,
+      7400
+    ]
+  },
+  "manual_uncertainty": "Order 10-30 original image pixels for broad features, not a surveyed accuracy estimate; mobile coastline introduces unknown additional error.",
+  "split": "Four fitting points; two coastal checkpoints reserved before the first affine solve. No alternative transformation fitted and no errors consulted when selecting/refining positions.",
+  "rejected_candidates": [
+    "Historical town centers: absent evidence of identical modern/historical settlement location.",
+    "Upper river confluences: reservoirs, generalized drainage and unresolved historical stream identities.",
+    "Pungo/Pamlico broad confluence: map outline and mouth definition ambiguous.",
+    "Historical roads: no modern-road snapping.",
+    "Graticules: no assumed longitude meridian."
+  ],
+  "geometry": "Coast-dominated fit; Eno-Haw and much of western extent outside fit-point convex hull; no interior independent checkpoints."
+}

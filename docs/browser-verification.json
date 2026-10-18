@@ -1,0 +1,41 @@
+{
+  "source": {
+    "base": "http://127.0.0.1:8000/preview/",
+    "checkedAt": "2026-10-12T21:02:30.568Z",
+    "tests": [
+      "live Collet PNG imagery, OSM, credits, disclaimer, unavailable Moseley",
+      "visibility and opacity retain the basemap",
+      "zoom and drag issue new WMS BBOX requests; fit returns to historical extent",
+      "all five original local views, proxy toggle, USGS credits",
+      "no TLS/mixed-content/auth-redirect/CORS/request/JavaScript errors in live browser run",
+      "server outage, local fallback and retry recovery",
+      "missing local data preserves live map",
+      "loading timeout and removal cancel stale status updates",
+      "mobile width has no horizontal overflow"
+    ],
+    "liveWmsResponses": 63
+  },
+  "static_package": {
+    "base": "http://127.0.0.1:8000/publish/geoserver-demo/preview/",
+    "checkedAt": "2026-10-12T21:04:48.700Z",
+    "tests": [
+      "live Collet PNG imagery, OSM, credits, disclaimer, unavailable Moseley",
+      "visibility and opacity retain the basemap",
+      "zoom and drag issue new WMS BBOX requests; fit returns to historical extent",
+      "all five original local views, proxy toggle, USGS credits",
+      "no TLS/mixed-content/auth-redirect/CORS/request/JavaScript errors in live browser run",
+      "server outage, local fallback and retry recovery",
+      "missing local data preserves live map",
+      "loading timeout and removal cancel stale status updates",
+      "mobile width has no horizontal overflow"
+    ],
+    "liveWmsResponses": 63
+  },
+  "other_checks": {
+    "javascript_syntax": "passed: app.js, map-config.js, test_viewer.cjs",
+    "existing_audit": "passed: 47 provenance inputs, numeric diagnostics, strict COG validation, local links and images",
+    "package": "83 allowlisted files, 36.37 MiB; checksums and HTML asset/link targets passed",
+    "git_diff_check": "passed",
+    "deployment": "not performed"
+  }
+}

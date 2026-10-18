@@ -1,0 +1,117 @@
+{
+  "id": "moseley_1733",
+  "technical_checks_passed": true,
+  "rasters": {
+    "master": {
+      "path": "deliverables/moseley_1733/moseley_1733-approximate-master.cog.tif",
+      "bytes": 29064289,
+      "sha256": "286a680341fd6b845786bd945cd507d97653edfd041a4ff06a64f95f74006cb8",
+      "crs": "EPSG:32119",
+      "dimensions": [
+        5126,
+        4332
+      ],
+      "bounds": [
+        473883.7159277918,
+        -107009.82893413946,
+        986483.7159277918,
+        326190.17106586054
+      ],
+      "geographic_bounds": [
+        -80.51817232695029,
+        32.71689208783996,
+        -74.78629529598119,
+        36.69016712145859
+      ],
+      "resolution": [
+        100.0,
+        100.0
+      ],
+      "overviews": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "bands": 4,
+      "color_interpretation": [
+        "red",
+        "green",
+        "blue",
+        "alpha"
+      ],
+      "compression": "Compression.deflate",
+      "cog_valid": true,
+      "errors": [],
+      "warnings": [],
+      "sampled_rgb_range": [
+        0,
+        223
+      ],
+      "sampled_alpha_nonzero_fraction": 0.63031005859375
+    },
+    "web": {
+      "path": "deliverables/moseley_1733/moseley_1733-approximate-web.cog.tif",
+      "bytes": 27200550,
+      "sha256": "bfd8397bc0d13603f66508ff99532eb46392e730c2e9da1974570d4c51a95ef7",
+      "crs": "EPSG:3857",
+      "dimensions": [
+        5105,
+        4306
+      ],
+      "bounds": [
+        -8963241.943041157,
+        3857757.7715218626,
+        -8325116.943041157,
+        4396007.771521863
+      ],
+      "geographic_bounds": [
+        -80.51817232695029,
+        32.716677734594775,
+        -74.78579792016258,
+        36.6901681903715
+      ],
+      "resolution": [
+        125.0,
+        125.0
+      ],
+      "overviews": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "bands": 4,
+      "color_interpretation": [
+        "red",
+        "green",
+        "blue",
+        "alpha"
+      ],
+      "compression": "Compression.deflate",
+      "cog_valid": true,
+      "errors": [],
+      "warnings": [],
+      "sampled_rgb_range": [
+        0,
+        224
+      ],
+      "sampled_alpha_nonzero_fraction": 0.6036376953125
+    }
+  },
+  "reprojection_fidelity": {
+    "comparison_crs": "EPSG:5070",
+    "grid": [
+      1000,
+      900
+    ],
+    "valid_samples": 405235,
+    "mean_absolute_rgb_difference_0_255": 0.13985794251072423,
+    "p95_absolute_rgb_difference": 1.0,
+    "alpha_mask_intersection_over_union": 0.9996712745052682,
+    "meaning": "Master-versus-web reprojection fidelity only, NOT modern positional validation"
+  },
+  "georeferencing_status": "approximate only",
+  "geographic_accuracy_certified": false,
+  "caution": "Passing COG, bounds, alpha and reprojection checks does not validate historical positions. See point evidence and independent checkpoint results in QA."
+}

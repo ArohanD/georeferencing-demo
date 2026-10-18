@@ -1,0 +1,34 @@
+{
+  "previews": [
+    {
+      "preview": "deliverables/wimble_1738/coastal-overview-comparison.jpg",
+      "reference_extent": {
+        "xmin": -8818321.27213228,
+        "ymin": 3946367.2410747986,
+        "xmax": -8218533.3612096915,
+        "ymax": 4350367.241074799,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "opacity": 0.55
+    },
+    {
+      "preview": "deliverables/wimble_1738/new-bern-comparison.jpg",
+      "reference_extent": {
+        "xmin": -8616128.587399377,
+        "ymin": 4136727.745036978,
+        "xmax": -8538204.943844084,
+        "ymax": 4218380.591533845,
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      "opacity": 0.55
+    }
+  ],
+  "notice": "Approximate historical-map alignment. For visual comparison only; not suitable for locating routes or sites precisely.",
+  "interpretation": "Substantial coastline and town discrepancies remain. These raster comparisons are not precise crossing-location evidence."
+}

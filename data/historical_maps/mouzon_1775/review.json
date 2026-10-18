@@ -1,0 +1,40 @@
+{
+  "checkpoint": {
+    "point_id": "C01",
+    "pixel": 13302.375,
+    "line": 3695.375,
+    "reference_x": -77.04109990880094,
+    "reference_y": 35.09592982882628,
+    "reference_crs": "EPSG:4326",
+    "feature_description": "North-bank cusp at Trent/Neuse junction at New Bern; coarse estuarine shoreline correspondence, not a town centroid",
+    "evidence": "Historical crop [12000,2600,2200,2300], resized to 1530x1600; selected display (906,762). USGS neuse_trent_review-modern.jpg selected display (445,320), center-of-pixel; returned extent in paired JSON",
+    "confidence": "medium-low: shore modification and broad estuarine junction; allow ~1 km correspondence uncertainty",
+    "status": "independent_coarse_check_not_used_for_fit",
+    "error_m_epsg5070": 43972.67210050226
+  },
+  "historical_predicted_longitude": -77.48817050040633,
+  "historical_predicted_latitude": 35.2515762592118,
+  "reference_pixel": [
+    445,
+    320
+  ],
+  "independent_error_m": 43972.67210050226,
+  "interpretation": "One coarse shoreline check only; not spatially distributed validation. No correction or tuning used. Unknown correspondence uncertainty; approximate 1 km visual tolerance is an assessment, not measured uncertainty.",
+  "rejected_candidates": [
+    {
+      "id": "R01",
+      "feature": "Eno/Little/Flat junction east of Hillsborough",
+      "reason": "Modern USGS shows Falls Lake reservoir at the network; historical branches ambiguous and pre-impoundment authoritative reference needed."
+    },
+    {
+      "id": "R02",
+      "feature": "New River and Bogue inlets",
+      "reason": "Dynamic barrier inlets; modern shoreline correspondence not defensible without change-history evidence."
+    },
+    {
+      "id": "R03",
+      "feature": "Hillsborough town symbol",
+      "reason": "Historical symbol/court-house identity requires site evidence; modern town centroid not used."
+    }
+  ]
+}

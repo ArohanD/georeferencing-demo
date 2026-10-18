@@ -1,0 +1,336 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6/presentation/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "New and accurate map of the provinces of North and South Carolina, Georgia etc. ..., Hargrett Rare Book and Manuscript Library Rare Map Collection, Hargrett Library"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Relief shown pictorially.\nNo. 76 printed below neat line, at right.\nFrom: Bown, Emanuel. A complete system of Geography, London, W. Innys, 1747.\nPhillips, Atlases, 603.\nDeRenne, 1203.\nCumming, 263.\n40 English miles = ca. 1 inch\nScale [ca. 1:2,280,960]"
+    ]
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "en": [
+        "No Copyright - United States (http://rightsstatements.org/vocab/NoC-US/1.0/)\nHargrett Library (University of Georgia)"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https://dlg.usg.edu/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "Hargrett Library"
+        ]
+      },
+      "logo": [
+        {
+          "id": "https://dlg.usg.edu/uploads/holding_institution/316/image/record_image.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6.json",
+      "type": "Dataset",
+      "format": "application/json"
+    }
+  ],
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Title"
+        ]
+      },
+      "value": {
+        "en": [
+          "New and accurate map of the provinces of North and South Carolina, Georgia etc. ..."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Holding Institution"
+        ]
+      },
+      "value": {
+        "en": [
+          "Hargrett Library"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Online Collection"
+        ]
+      },
+      "value": {
+        "en": [
+          "Hargrett Rare Book and Manuscript Library Rare Map Collection"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Creator"
+        ]
+      },
+      "value": {
+        "en": [
+          "Bowen, Emanuel, d. 1767"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Publisher"
+        ]
+      },
+      "value": {
+        "en": [
+          "[London : W. Innys, 1747]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "en": [
+          "1747"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "en": [
+          "North Carolina--Maps--Early works to 1800\nSouth Carolina--Maps--Early works to 1800\nGeorgia--Maps--Early works to 1800"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Location"
+        ]
+      },
+      "value": {
+        "en": [
+          "United States, Georgia, 32.75042, -83.50018\nUnited States, North Carolina, 35.50069, -80.00032\nUnited States, South Carolina, 34.00043, -81.00009"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Medium"
+        ]
+      },
+      "value": {
+        "en": [
+          "maps (documents)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Type"
+        ]
+      },
+      "value": {
+        "en": [
+          "StillImage"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "File format"
+        ]
+      },
+      "value": {
+        "en": [
+          "image/jp2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Description"
+        ]
+      },
+      "value": {
+        "en": [
+          "Relief shown pictorially.\nNo. 76 printed below neat line, at right.\nFrom: Bown, Emanuel. A complete system of Geography, London, W. Innys, 1747.\nPhillips, Atlases, 603.\nDeRenne, 1203.\nCumming, 263.\n40 English miles = ca. 1 inch\nScale [ca. 1:2,280,960]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Extent"
+        ]
+      },
+      "value": {
+        "en": [
+          "1 map : uncol. ; 35 x 43 cm."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "DLG record ID"
+        ]
+      },
+      "value": {
+        "en": [
+          "guan_hmap_hmap1747b6"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Metadata URL"
+        ]
+      },
+      "value": {
+        "en": [
+          "https://dlg.usg.edu/record/guan_hmap_hmap1747b6"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Digital Object URL"
+        ]
+      },
+      "value": {
+        "en": [
+          "https://dlg.usg.edu/record/guan_hmap_hmap1747b6#item"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Citation"
+        ]
+      },
+      "value": {
+        "en": [
+          "Cite as: [Title], [map number], Hargrett Rare Book and Manuscript Library, University of Georgia Libraries."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "en": [
+          "No Copyright - United States (http://rightsstatements.org/vocab/NoC-US/1.0/)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Portal"
+        ]
+      },
+      "value": {
+        "en": [
+          "The Digital Library of Georgia"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6/canvas/1",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "1"
+        ]
+      },
+      "height": 6643,
+      "width": 7633,
+      "items": [
+        {
+          "id": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6/canvas/1/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6/annotation/1/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://dlg.usg.edu/images/iiif/2/dlg%2Fguan%2Fhmap%2Fguan_hmap_hmap1747b6%2Fguan_hmap_hmap1747b6-00001.jp2",
+                "type": "Image",
+                "format": "image/jp2",
+                "height": 6643,
+                "width": 7633,
+                "service": [
+                  {
+                    "id": "https://dlg.usg.edu/images/iiif/2/dlg%2Fguan%2Fhmap%2Fguan_hmap_hmap1747b6%2Fguan_hmap_hmap1747b6-00001.jp2",
+                    "type": "ImageService2",
+                    "profile": "level1"
+                  }
+                ]
+              },
+              "target": "https://dlg.usg.edu/record/guan_hmap_hmap1747b6/canvas/1"
+            }
+          ]
+        }
+      ],
+      "rendering": [
+        {
+          "id": "https://dlg.usg.edu/images/iiif/2/dlg%2Fguan%2Fhmap%2Fguan_hmap_hmap1747b6%2Fguan_hmap_hmap1747b6-00001.jp2/full/full/0/default.jpg?download=true",
+          "type": "Image",
+          "label": {
+            "en": [
+              "Full size image (7633 x 6643px)"
+            ]
+          },
+          "format": "image/jpeg"
+        }
+      ]
+    }
+  ]
+}

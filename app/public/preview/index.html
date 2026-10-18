@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Listening Machine — LiDAR terrain</title>
+<link rel="stylesheet" href="leaflet.css">
+<style>
+*{box-sizing:border-box}body{margin:0;height:100vh;height:100dvh;display:flex;flex-direction:column;font:14px system-ui;color:#242424;background:#f8f5ee}
+header{padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;border-bottom:1px solid #ddd8cd;z-index:1000}
+label{display:flex;align-items:center;gap:7px}button,select{font:inherit;max-width:100%;padding:5px 8px}button{cursor:pointer}input{margin:0}#opacity{width:110px}output{min-width:3ch;font-variant-numeric:tabular-nums}
+main{position:relative;flex:1;min-height:240px}#map{height:100%;background:#e8e6e0}.status{position:absolute;top:10px;right:10px;z-index:1000;max-width:min(330px,75%);pointer-events:none}.status p{margin:0 0 6px;padding:8px 12px;background:#fffef9;box-shadow:0 1px 5px #0003;border-radius:3px}
+.terrain-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:8px 16px;border-bottom:1px solid #ddd8cd;font-size:13px}.terrain-toolbar p{flex-basis:100%;margin:0;color:#554f43;font-size:12px}.terrain-toolbar input{width:95px}#terrain-key{position:absolute;bottom:36px;right:10px;z-index:800;background:#fffef9ed;padding:8px 10px;border-radius:3px;font-size:11px;box-shadow:0 1px 5px #0002}#slope-legend{margin-top:6px}#slope-legend div{display:flex;align-items:center;gap:6px;height:20px}#slope-legend img{width:20px;height:20px}
+footer{padding:6px 16px;font-size:11px;color:#554f43}a{color:#14598a}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #14598a;outline-offset:2px}
+@media(max-width:520px){header{padding:8px 10px;gap:8px 12px}label:first-child{width:100%}#historical-layer{flex:1}.terrain-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:8px 16px;border-bottom:1px solid #ddd8cd;font-size:13px}.terrain-toolbar p{flex-basis:100%;margin:0;color:#554f43;font-size:12px}.terrain-toolbar input{width:95px}#terrain-key{position:absolute;bottom:36px;right:10px;z-index:800;background:#fffef9ed;padding:8px 10px;border-radius:3px;font-size:11px;box-shadow:0 1px 5px #0002}#slope-legend{margin-top:6px}#slope-legend div{display:flex;align-items:center;gap:6px;height:20px}#slope-legend img{width:20px;height:20px}
+footer{padding:6px 10px}}
+</style>
+</head>
+<body>
+<header aria-label="Map controls">
+<label>Historical layer <select id="historical-layer"></select></label>
+<label>Opacity <input id="opacity" type="range" min="0" max="100" value="55"><output id="percent" for="opacity">55%</output></label>
+<button id="retry" type="button">Retry</button>
+<button id="fit" type="button">Fit</button>
+<label><input id="visible" type="checkbox"> Show historical</label>
+<label>Basemap <select id="basemap"></select></label>
+</header>
+<section class="terrain-toolbar" aria-label="Terrain controls">
+<label>Terrain <select id="terrain"></select></label>
+<label>Terrain opacity <input id="terrain-opacity" type="range" min="0" max="100" value="100"><output id="terrain-percent" for="terrain-opacity">100%</output></label>
+<label>Explore <select id="terrain-location"></select></label>
+<button id="inspect" type="button">Inspect here</button>
+<p id="terrain-hint" role="status"></p>
+</section>
+<main aria-label="Historical and modern map comparison">
+<div id="map"></div>
+<div class="status"><p id="layer-status" role="status" aria-live="polite" hidden></p><p id="terrain-status" role="status" aria-live="polite" hidden></p><p id="base-status" role="status" aria-live="polite" hidden></p></div>
+<aside id="terrain-key" aria-label="Terrain source and legend">
+<a href="https://services.nconemap.gov/secure/rest/services/Elevation" target="_blank" rel="noopener">NC LiDAR-derived terrain</a><br>
+<span>~3 ft DEM grid · modern surface</span>
+<div id="slope-legend" aria-label="Slope in degrees" hidden><b>Slope (degrees)</b></div>
+</aside>
+</main>
+<footer>Approximate historical-map alignment. For visual comparison only; not suitable for locating routes or sites precisely. Modern terrain helps inspect potential approaches; it does not establish historical crossings or water depth.<span id="layer-diagnostic" hidden></span></footer>
+<script src="leaflet.js"></script><script src="map-config.js"></script><script src="terrain-layer.js"></script><script src="app.js"></script>
+</body>
+</html>
