@@ -2,7 +2,7 @@ name: Deploy viewer to GitHub Pages
 
 on:
   push:
-    branches: [app]
+    branches: [main]
     paths:
       - 'app/**'
       - '.github/workflows/deploy-viewer.yml'
@@ -35,7 +35,7 @@ jobs:
           path: app/dist
 
   deploy:
-    if: github.ref == 'refs/heads/app'
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     permissions:

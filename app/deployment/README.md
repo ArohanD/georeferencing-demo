@@ -1,6 +1,6 @@
 # Publish the viewer with GitHub Pages
 
-The monorepo is on branch `app` in `ArohanD/georeferencing-demo`. Its existing `main` branch contains the old published demo. Publishing uses the monorepo directly; no second checkout or generated-files branch is needed.
+The monorepo is on branch `main` in `ArohanD/georeferencing-demo`. Publishing uses the monorepo directly; no second checkout or generated-files branch is needed.
 
 The workflow lives at [`.github/workflows/deploy-viewer.yml`](../../.github/workflows/deploy-viewer.yml), the location GitHub requires. It runs the app-owned build script and uploads **only `app/dist/`**. Shared data, research, tools, and local artifacts are excluded from the deployment.
 
@@ -9,13 +9,15 @@ The workflow lives at [`.github/workflows/deploy-viewer.yml`](../../.github/work
 Do these steps before pushing the new workflow:
 
 1. Open the repository's **Settings → Pages**. Under **Build and deployment → Source**, choose **GitHub Actions**. Do not create one of the suggested workflows; this repo already contains one.
-2. Open **Settings → Environments → github-pages**. Under **Deployment branches and tags**, ensure the `app` branch is allowed. If selected branches are used, add a branch rule named `app`; keep any other rules you still need.
-3. From the monorepo root, push the committed changes with `git push origin app`.
+2. Open **Settings → Environments → github-pages**. Under **Deployment branches and tags**, ensure the `main` branch is allowed. If selected branches are used, add a branch rule named `main`; keep any other rules you still need.
+3. From the monorepo root, push the committed changes with `git push origin main`.
 4. Open **Actions → Deploy viewer to GitHub Pages**. Wait for both `build` and `deploy` to succeed, then visit https://arohand.github.io/georeferencing-demo/ . The `/preview/` path remains supported.
 
 If an earlier workflow run failed before the settings were ready, open that run and choose **Re-run all jobs** after correcting the settings. You do not need another commit.
 
-The workflow deploys on pushes to `app` that change the app folder or workflow. Do not merge the old `main` deployment snapshot over the monorepo. GitHub's manual **Run workflow** button is available only when the workflow also exists on the repository's default branch; the push trigger works on `app` without changing the default branch. You can optionally make `app` the default later in repository settings.
+The workflow deploys on pushes to `main` that change the app folder, workflow, or layout checker. To deploy manually, open **Actions → Deploy viewer to GitHub Pages → Run workflow**, select `main`, and run it. Other branches cannot run the deployment job.
+
+The Pages folder selector in **Deploy from a branch** only supports the repository root or `/docs`; it will not list `app/`. Use **GitHub Actions** as the source. The workflow selects `app/dist/` for you.
 
 ## Build and inspect locally
 
