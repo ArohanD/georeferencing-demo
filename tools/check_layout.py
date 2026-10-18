@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / 'apps/viewer/public'
-PACKAGE = ROOT / 'publish/app-lidar'
+PACKAGE = ROOT / 'apps/viewer/dist'
 
 
 class Links(HTMLParser):

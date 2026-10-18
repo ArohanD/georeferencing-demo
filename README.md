@@ -11,7 +11,7 @@ A monorepo for historical-map applications, shared geospatial data, processing t
 | [docs/](docs/) | Integration notes and recorded service/app validation |
 | [outputs/](outputs/) | Original Collet pilot results and review images; large rasters and scratch previews are ignored |
 | `deliverables/` | Ignored local scans, generated multi-map rasters, previews, and publication receipts |
-| `publish/` | Ignored deployment packages; generated from app-owned assets only |
+| `apps/viewer/dist/` | Ignored viewer build, generated from app-owned assets only |
 
 New applications belong under `apps/<name>/` with their own assets, scripts, and README. Shared data stays outside app folders. Paths stored in processing manifests are relative to the repository root; existing data and raster locations are preserved.
 
@@ -32,7 +32,7 @@ python3 apps/viewer/scripts/package_demo.py
 python3 tools/check_layout.py
 ```
 
-Deploy only `publish/app-lidar/`. Its existing root redirect and `/preview/` URL are preserved. Building does not publish anything.
+Deploy only `apps/viewer/dist/`. Its existing root redirect and `/preview/` URL are preserved. Building does not publish anything. See [viewer publishing](apps/viewer/deployment/README.md) for the GitHub Pages workflow and one-time setup.
 
 ## Processing and research
 

@@ -1,0 +1,52 @@
+name: Deploy viewer to GitHub Pages
+
+on:
+  push:
+    branches: [app]
+    paths:
+      - 'apps/viewer/**'
+      - '.github/workflows/deploy-viewer.yml'
+      - 'tools/check_layout.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build viewer
+        run: python3 apps/viewer/scripts/package_demo.py
+      - name: Validate viewer package
+        run: |
+          python3 tools/check_layout.py
+          node --check apps/viewer/public/preview/app.js
+          node --check apps/viewer/public/preview/map-config.js
+          node --check apps/viewer/public/preview/terrain-layer.js
+      - name: Upload viewer artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: apps/viewer/dist
+
+  deploy:
+    if: github.ref == 'refs/heads/app'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy viewer
+        id: deployment
+        uses: actions/deploy-pages@v4

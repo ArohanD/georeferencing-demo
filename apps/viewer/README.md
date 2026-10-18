@@ -31,10 +31,10 @@ Public endpoints, bounds, source credits, example views and display options are 
 
 ```bash
 python3 apps/viewer/scripts/package_demo.py
-python3 -m http.server 8001 --bind 127.0.0.1 --directory publish/app-lidar
+python3 -m http.server 8001 --bind 127.0.0.1 --directory apps/viewer/dist
 ```
 
-Review http://localhost:8001/ . Only `publish/app-lidar/` is the deployment artifact; it contains nine app/assets files plus a checksummed manifest. Other local processing/archive files are excluded. Nothing is pushed or published by these commands. The build includes the two published colonial map configurations.
+Review http://localhost:8001/ . Only `apps/viewer/dist/` is the deployment artifact; it contains nine app/assets files plus a checksummed manifest. Other local processing/archive files are excluded. Nothing is pushed or published by these commands. The build includes the two published colonial map configurations.
 
 ## Verify
 
@@ -51,3 +51,7 @@ NODE_PATH=/tmp/georef-browser/node_modules PLAYWRIGHT_BROWSERS_PATH=/tmp/georef-
 Keep the localhost server running. Optional test arguments are the viewer URL and evidence output directory. Test-only shell variables configure Playwright; the app itself needs none. Tests cover actual imagery, Web Mercator tile extents, terrain/source selection, opacity, historical comparison, regional examples, pan/zoom, loading/errors/retry, and mobile layout. Results and screenshots go under `/tmp/georef-lidar-validation` for terrain, and the original viewer suite's configured output directory.
 
 The [original GeoServer notes](../../docs/geoserver-integration.md#publish-moseley-on-the-vcl-server) retain Moseley's publication steps. Their older local-comparison/build descriptions apply to the integration branch.
+
+## Publish
+
+See [GitHub Pages setup](deployment/README.md). The app builds into `apps/viewer/dist/`; deployment uploads only that folder. Verification reports go to the ignored `apps/viewer/artifacts/` directory.

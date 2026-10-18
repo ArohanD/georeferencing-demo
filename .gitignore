@@ -6,7 +6,6 @@ __pycache__/
 .cache/
 .tools/
 .local-auth/
-publish/
 outputs/*working*
 outputs/*intermediate*
 
