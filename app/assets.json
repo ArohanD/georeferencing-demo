@@ -1,0 +1,16 @@
+[
+  "index.html",
+  ".nojekyll",
+  "preview/index.html",
+  "preview/app.js",
+  "preview/map-config.js",
+  "preview/terrain-layer.js",
+  "preview/leaflet.js",
+  "preview/leaflet.css",
+  "preview/LEAFLET-LICENSE",
+  "preview/plant-layer.js",
+  "preview/plant-layer.css",
+  "preview/plants/observations.geojson",
+  "preview/plants/manifest.json",
+  "preview/view-state.js"
+]

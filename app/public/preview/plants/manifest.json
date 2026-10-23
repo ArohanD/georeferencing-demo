@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "started_at": "2026-10-18T20:19:08+00:00",
+  "retrieved_at": "2026-10-18T20:24:53+00:00",
+  "api": "https://api.inaturalist.org/v1/",
+  "config": {
+    "area": {
+      "label": "North Carolina",
+      "place_id": 30,
+      "expected_name": "North Carolina"
+    },
+    "accuracy_metres": 100,
+    "licenses": [
+      "cc0",
+      "cc-by",
+      "cc-by-nc"
+    ],
+    "per_page": 200,
+    "max_results_per_taxon": 10000,
+    "taxa": [
+      {
+        "id": 55844,
+        "name": "Vinca minor",
+        "rank": "species",
+        "label": "Lesser periwinkle"
+      },
+      {
+        "id": 53326,
+        "name": "Vinca major",
+        "rank": "species",
+        "label": "Greater periwinkle"
+      },
+      {
+        "id": 53597,
+        "name": "Narcissus",
+        "rank": "genus",
+        "label": "Daffodils \u00b7 genus, species and hybrids"
+      },
+      {
+        "id": 126583,
+        "name": "Hemerocallis fulva",
+        "rank": "species",
+        "label": "Orange daylily"
+      }
+    ]
+  },
+  "verified_taxa": [
+    {
+      "id": 55844,
+      "name": "Vinca minor",
+      "rank": "species"
+    },
+    {
+      "id": 53326,
+      "name": "Vinca major",
+      "rank": "species"
+    },
+    {
+      "id": 53597,
+      "name": "Narcissus",
+      "rank": "genus"
+    },
+    {
+      "id": 126583,
+      "name": "Hemerocallis fulva",
+      "rank": "species"
+    }
+  ],
+  "counts": {
+    "55844": {
+      "queried": 2427,
+      "pages_including_terminal": 14,
+      "unique_ids": 2427,
+      "duplicates": 0,
+      "complete": true,
+      "accepted": 1138,
+      "excluded": {
+        "missing_or_invalid_accuracy": 330,
+        "accuracy_above_threshold": 303,
+        "not_open": 200,
+        "license_not_allowed": 456
+      },
+      "query": {
+        "place_id": 30,
+        "taxon_id": 55844,
+        "quality_grade": "research,needs_id,casual",
+        "verifiable": "any",
+        "order_by": "id",
+        "order": "asc"
+      },
+      "licenses": {
+        "cc-by-nc": 1047,
+        "cc-by": 64,
+        "cc0": 27
+      },
+      "quality_grades": {
+        "research": 1080,
+        "casual": 41,
+        "needs_id": 17
+      },
+      "cultivation": {
+        "not_marked_cultivated": 1100,
+        "cultivated": 38
+      }
+    },
+    "53326": {
+      "queried": 2022,
+      "pages_including_terminal": 12,
+      "unique_ids": 2022,
+      "duplicates": 0,
+      "complete": true,
+      "accepted": 985,
+      "excluded": {
+        "accuracy_above_threshold": 247,
+        "missing_or_invalid_accuracy": 212,
+        "license_not_allowed": 438,
+        "not_open": 140
+      },
+      "query": {
+        "place_id": 30,
+        "taxon_id": 53326,
+        "quality_grade": "research,needs_id,casual",
+        "verifiable": "any",
+        "order_by": "id",
+        "order": "asc"
+      },
+      "licenses": {
+        "cc-by-nc": 919,
+        "cc0": 18,
+        "cc-by": 48
+      },
+      "quality_grades": {
+        "research": 927,
+        "casual": 52,
+        "needs_id": 6
+      },
+      "cultivation": {
+        "not_marked_cultivated": 937,
+        "cultivated": 48
+      }
+    },
+    "53597": {
+      "queried": 3849,
+      "pages_including_terminal": 21,
+      "unique_ids": 3849,
+      "duplicates": 0,
+      "complete": true,
+      "accepted": 2045,
+      "excluded": {
+        "missing_or_invalid_accuracy": 366,
+        "accuracy_above_threshold": 500,
+        "license_not_allowed": 673,
+        "not_open": 265
+      },
+      "query": {
+        "place_id": 30,
+        "taxon_id": 53597,
+        "quality_grade": "research,needs_id,casual",
+        "verifiable": "any",
+        "order_by": "id",
+        "order": "asc"
+      },
+      "licenses": {
+        "cc-by-nc": 1984,
+        "cc0": 24,
+        "cc-by": 37
+      },
+      "quality_grades": {
+        "needs_id": 1183,
+        "casual": 700,
+        "research": 162
+      },
+      "cultivation": {
+        "not_marked_cultivated": 1357,
+        "cultivated": 688
+      }
+    },
+    "126583": {
+      "queried": 1268,
+      "pages_including_terminal": 8,
+      "unique_ids": 1268,
+      "duplicates": 0,
+      "complete": true,
+      "accepted": 598,
+      "excluded": {
+        "missing_or_invalid_accuracy": 184,
+        "accuracy_above_threshold": 147,
+        "license_not_allowed": 245,
+        "not_open": 94
+      },
+      "query": {
+        "place_id": 30,
+        "taxon_id": 126583,
+        "quality_grade": "research,needs_id,casual",
+        "verifiable": "any",
+        "order_by": "id",
+        "order": "asc"
+      },
+      "licenses": {
+        "cc-by-nc": 543,
+        "cc-by": 28,
+        "cc0": 27
+      },
+      "quality_grades": {
+        "research": 204,
+        "casual": 171,
+        "needs_id": 223
+      },
+      "cultivation": {
+        "not_marked_cultivated": 432,
+        "cultivated": 166
+      }
+    }
+  },
+  "feature_count": 4766,
+  "requests": 64,
+  "validation": {
+    "complete": true,
+    "unique_ids": true,
+    "open_locations_only": true,
+    "empty_validated": false
+  },
+  "limitations": "API is mutable, not a transactional snapshot. Counts and ordered IDs detect pagination problems, not every simultaneous edit.",
+  "data_rights": "Per-observation licenses apply; CC BY-NC records require noncommercial use and attribution. No photos.",
+  "dataset_sha256": "4a14917727fe4e4a50a4734c3ea6f4483ea5f79526aa8cdb372432798a1b5f90",
+  "dataset_bytes": 2504695
+}

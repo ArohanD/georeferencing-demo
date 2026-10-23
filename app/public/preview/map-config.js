@@ -5,7 +5,7 @@ window.HISTORICAL_MAP_CONFIG = {
   endpoint: 'https://vclvm176-164.vclgis.cnr.ncsu.edu/geoserver/history/wms',
   version: '1.1.1', // EPSG:3857 x/y BBOX; avoids WMS 1.3.0 geographic axis ambiguity.
   format: 'image/png',
-  checkedOn: '2026-10-12',
+  checkedOn: '2026-10-18',
   timeoutMs: 20000,
   basemaps: [
     {
@@ -85,11 +85,11 @@ window.HISTORICAL_MAP_CONFIG = {
       "diagnostic": "Bowen coastal NC excerpt: approximately 13.9 km RMSE across three held-out cape proxies."
     },
     {
-      id: 'moseley_1733', label: 'Moseley 1733 · unavailable',
-      name: 'history:moseley_1733', available: false,
+      id: 'moseley_1733', label: 'Moseley 1733 · approximate',
+      name: 'history:moseley_1733', available: true,
       bounds: [[32.716677734594775, -80.51817232695029], [36.6901681903715, -74.78579792016258]],
       attribution: '<a href="https://digital.lib.ecu.edu/62315">East Carolina University, J. Y. Joyner Library, East Carolina Manuscript Collection MC0017</a>',
-      diagnostic: 'Moseley: approximately 20.5 km RMSE across two held-out coastal proxies.'
+      diagnostic: 'Moseley: approximate historical-map visualization. Approximately 20.45 km positional discrepancy (RMSE) was recorded across two coastal checks; interior accuracy remains unvalidated. This is not a comprehensive accuracy assessment. Publishing does not improve georeferencing.'
     }
   ]
 };

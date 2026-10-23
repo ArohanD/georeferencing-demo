@@ -1,0 +1,14 @@
+.plant-toolbar{padding:7px 16px;border-bottom:1px solid #ddd8cd;background:#f5f4eb;font-size:13px}
+.plant-heading{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}.plant-heading label{font-weight:600}
+#plant-status{margin:0;font-size:12px}#plant-details{margin-top:5px}#plant-details summary{cursor:pointer;width:fit-content;padding:4px 0}
+#plant-details>div{max-height:30vh;overflow:auto;padding:4px 3px}
+#plant-taxa{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:7px 18px;margin:6px 0;border:0;padding:0}
+#plant-taxa legend{font-weight:600;margin-bottom:5px}#plant-taxa label{display:grid;grid-template-columns:16px 27px minmax(0,1fr);gap:3px 7px;align-items:center;min-height:30px;width:auto}
+#plant-taxa label>span:last-child{font-size:11px;grid-column:3}#plant-taxa input{flex-shrink:0}
+.plant-badge{color:white;font-size:11px;font-weight:700;min-width:27px;text-align:center;border-radius:3px;padding:3px}
+.plant-actions{display:flex;flex-wrap:wrap;gap:7px}
+.plant-popup p{margin:6px 0!important}.plant-popup{max-width:260px}summary:focus-visible{outline:2px solid #14598a;outline-offset:2px}
+@media(max-width:520px){.plant-toolbar{padding:6px 10px}#plant-taxa{grid-template-columns:1fr}#plant-details>div{max-height:26vh}.plant-heading{gap:4px}#plant-taxa label>span:last-child{margin-left:0}}
+
+.plant-clue{position:fixed;z-index:3000;width:300px;max-width:calc(100vw - 16px);padding:10px 12px;border:1px solid #b9b3a5;border-radius:5px;background:#fffef9;color:#242424;box-shadow:0 3px 12px #0003;font:13px/1.45 system-ui}
+#plant-taxa label{cursor:help}#plant-taxa input{cursor:pointer}

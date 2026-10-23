@@ -150,8 +150,69 @@
   });
   const initial = config.terrain.examples.find(item => item.id === config.terrain.defaultExample);
   el('terrain-location').value = initial.id;
+  // Shared links contain display settings only, never credentials or research data.
+  function restoreView() {
+    const state = window.ViewState.parse(location.hash, {
+      base: config.basemaps, terrain: config.terrain.modes, historical: config.layers
+    }, config.terrain.maxZoom);
+    if (!state) return false;
+    for (const [key, id] of [['base', 'basemap'], ['terrain', 'terrain'], ['historical', 'historical-layer']]) {
+      if (state[key] !== undefined) el(id).value = state[key];
+    }
+    for (const [key, id, output] of [['opacity', 'opacity', 'percent'], ['terrainOpacity', 'terrain-opacity', 'terrain-percent']]) {
+      if (state[key] !== undefined) {
+        el(id).value = String(state[key]);
+        el(output).textContent = el(id).value + '%';
+      }
+    }
+    if (state.visible !== undefined) el('visible').checked = state.visible;
+    if (state.center) {
+      map.setView(state.center, state.zoom, {animate: false});
+      if (![...el('terrain-location').options].some(option => option.value === 'shared')) {
+        const option = new Option('Shared view', 'shared');
+        option.disabled = true;
+        el('terrain-location').add(option);
+      }
+      el('terrain-location').value = 'shared';
+      return true;
+    }
+    return false;
+  }
+  // Establish a valid map before applying URL options; malformed values keep safe defaults.
   map.setView(initial.center, config.terrain.inspectZoom);
+  const plants = window.createPlantLayer(map);
+  restoreView();
+  plants.restore(new URLSearchParams(location.hash.slice(1)), {initial: true});
   showBase();
   showHistorical();
   showTerrain();
+  window.addEventListener('hashchange', () => {
+    restoreView();
+    plants.restore(new URLSearchParams(location.hash.slice(1)));
+    showBase(); showHistorical(); showTerrain(true);
+  });
+  el('share-view').addEventListener('click', async () => {
+    const center = map.getCenter().wrap();
+    const params = window.ViewState.serialize({
+      lat: center.lat, lng: center.lng, zoom: map.getZoom(),
+      base: el('basemap').value, terrain: el('terrain').value,
+      historical: el('historical-layer').value, visible: el('visible').checked,
+      opacity: el('opacity').value, terrainOpacity: el('terrain-opacity').value
+    });
+    plants.serialize(params);
+    const url = new URL(location.href);
+    url.hash = params.toString();
+    el('share-panel').hidden = false;
+    el('share-url').value = url.href;
+    el('share-status').textContent = 'Copy this link to reopen the same map view. Private previews require university GitHub access.';
+    map.invalidateSize({pan: false});
+    el('share-url').focus();
+    el('share-url').select();
+    try {
+      await navigator.clipboard.writeText(url.href);
+      el('share-status').textContent = 'Link copied. Private previews require university GitHub access.';
+    } catch (_) {
+      // The selectable link remains usable when clipboard access is unavailable or denied.
+    }
+  });
 })();

@@ -1,26 +1,40 @@
-"""Build the app branch's minimal static site; no processing/research assets."""
-import hashlib
+"""Build the minimal static application using the same rules as branch previews."""
 import json
-import shutil
 from pathlib import Path
+from static_package import assemble
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'app/public'
 DEST = ROOT / 'app/dist'
-FILES = ['index.html', '.nojekyll', 'preview/index.html', 'preview/app.js',
-         'preview/map-config.js', 'preview/terrain-layer.js', 'preview/leaflet.js', 'preview/leaflet.css',
-         'preview/LEAFLET-LICENSE']
-DEST.mkdir(parents=True, exist_ok=True)
-# Refuse unexpected old payloads instead of including or deleting them.
-for path in DEST.rglob('*'):
-    if path.is_file() and path.relative_to(DEST).as_posix() not in FILES + ['PUBLICATION-MANIFEST.json']:
-        raise RuntimeError(f'Unexpected file in app package: {path.relative_to(DEST)}')
-manifest = {}
-for name in FILES:
-    src, dst = SOURCE / name, DEST / name
-    dst.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(src, dst)
-    content = dst.read_bytes()
-    manifest[name] = {'bytes': len(content), 'sha256': hashlib.sha256(content).hexdigest()}
-(DEST / 'PUBLICATION-MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')
-print(f'App package: {len(manifest)} files, {sum(item["bytes"] for item in manifest.values()) / 1024:.1f} KiB at {DEST}')
+
+# Transitional declaration for the pre-JSON builder on main. Not read by this
+# packager; the parity test prevents drift. Remove after the new builder ships.
+FILES = ['index.html', '.nojekyll', 'preview/index.html', 'preview/app.js', 'preview/map-config.js', 'preview/terrain-layer.js', 'preview/leaflet.js', 'preview/leaflet.css', 'preview/LEAFLET-LICENSE', 'preview/plant-layer.js', 'preview/plant-layer.css', 'preview/plants/observations.geojson', 'preview/plants/manifest.json', 'preview/view-state.js']
+
+
+def package(source=SOURCE, dest=DEST, manifest_path=ROOT / 'app/assets.json'):
+    def read_asset(name, limit):
+        path = source / name
+        # Check every path component before following it.
+        current = source
+        if current.is_symlink():
+            raise ValueError('App source directory must not be a symlink')
+        for part in Path(name).parts:
+            current = current / part
+            if current.is_symlink():
+                raise ValueError(f'Non-regular asset: {name}')
+        if not path.is_file():
+            raise ValueError(f'Missing asset: {name}')
+        if path.stat().st_size > limit:
+            raise ValueError(f'Asset exceeds 5 MiB: {name}')
+        return path.read_bytes()
+    return assemble(json.loads(manifest_path.read_text()), read_asset, dest)
+
+
+def main():
+    manifest = package()
+    print(f'App package: {len(manifest)} files, {sum(item["bytes"] for item in manifest.values()) / 1024:.1f} KiB at {DEST}')
+
+
+if __name__ == '__main__':
+    main()
